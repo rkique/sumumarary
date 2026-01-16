@@ -11,7 +11,7 @@ LEVEL_FOLDER_PATH = "level_summaries"
 TEXT_FOLDER_PATH = "text_summaries"
 
 def level_summarization_prompt(count, lines, text):
-    prompt = f"Create exactly {count} one-line summaries from the following plot summary. Do not use any names of places or people and keep the sentences simple. Each summary should summarize {lines} lines each, and not exceed 15 words. The summaries can refer to each other, and should form a cohesive narrative. \n\n Plot summary:\n{text}"
+    prompt = f"Create exactly {count} one-line summaries from the following plot summary. Do not use any names of places or people. Keep the sentence structure simple. Each summary should summarize {lines} lines each, keep each summary under 20 words in length. The summaries can refer to each other, and should form a cohesive narrative. \n\n Plot summary:\n{text}"
     return prompt
 
 class Summary:
@@ -27,7 +27,7 @@ class Summary:
         self.levels = levels
         self.source_text, self.total_lines = self.read_document(path)
         
-    def summarize(self, text, count, lines):
+    def summarize(self, count: int, lines: int) -> str:
         """Query OpenAI for summaries of specified count and length"""
         response = client.chat.completions.create(
             model= "gpt-5.2",
@@ -58,8 +58,12 @@ class Summary:
 
 if __name__ == "__main__":
     movie_titles = open("movie_titles.txt").read().splitlines()
-    print(movie_titles)
+    movie_titles = movie_titles[25:]
     for movie_title in movie_titles:
-        summarizer = Summary(f"{movie_title}.txt", levels=5)
-        summarizer.save_all_summaries()
-        print(f"[Summary] {movie_title}\n")
+        try:
+            summarizer = Summary(f"{movie_title}.txt", levels=5)
+            summarizer.save_all_summaries()
+            print(f"[Summary] {movie_title}\n")
+        except: 
+            print(f"[Error] could not summarize {movie_title}\n")
+            continue

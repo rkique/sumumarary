@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <title>Accordion </title>
+  <style>
+    .page-title {   
+      font-size: 64px;
+      font-family: 'Unica One', sans-serif;
+      cursor: default;
+    }
+
+    .page-title .inserted {
+      display: inline-block;
+      max-width: 1em;
+      overflow: hidden;
+      color: var(--text-muted);
+      transition: max-width 200ms ease;
+    }
+
+    .page-title:hover .inserted {
+      max-width: 0;
+    }
+
+    :root {
+      --bg: #f5f0e6;
+      --card-bg: #ebe5d9;
+      --border: #c9c3b5;
+      --accent: #1a5f3c;
+      --accent-bg: #e6dfd0;
+      --accent-border: #b8b2a3;
+      --text: #1a5f3c;
+      --text-muted: #5b9c78;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 24px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .movie-select {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      margin-bottom: 24px;
+      cursor: pointer;
+    }
+
+    .tree-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+    }
+
+    .level-label {
+      display: inline-block;
+      padding: 6px 12px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .tree-grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .node {
+      background: var(--card-bg);
+      border: 1px solid var(--text);
+      border-radius: 0;
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      transition: transform 160ms ease, box-shadow 160ms ease, border 160ms ease;
+      cursor: default;
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .node.width-half {
+      width: calc(50% - 4px);
+    }
+
+    .node.width-quarter {
+      width: calc(25% - 6px);
+    }
+
+    .node.clickable {
+      cursor: pointer;
+      background: var(--accent-bg);
+      border-color: var(--text);
+    }
+
+    .node.clickable:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 2px dotted var(--text);
+    }
+
+    .node.leaf {
+      background: var(--card-bg);
+      border-color: var(--text);
+    }
+
+    .node p {
+      margin: 0;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    .reset-btn {
+      padding: 8px 16px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background 150ms;
+    }
+
+    .reset-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .guess-container {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .guess-input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      color: var(--text);
+    }
+
+    .guess-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .guess-btn {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 150ms;
+    }
+
+    .guess-btn:hover {
+      background: #145030;
+    }
+
+    .feedback {
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .feedback.wrong {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+
+    .feedback.correct {
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .win-message {
+      text-align: center;
+      padding: 32px;
+      background: #f0fdf4;
+      border: 2px solid #166534;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    .win-message h2 {
+      color: #166534;
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .win-message p {
+      color: #166534;
+      margin: 0 0 16px;
+    }
+
+    .play-again-btn {
+      padding: 12px 24px;
+      background: #166534;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .movie-select {
+      display: none;
+    }
+
+    .guess-count {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .hint-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .hint-counter .eye-icon {
+      font-size: 16px;
+    }
+
+    .autocomplete-container {
+      position: relative;
+      flex: 1;
+    }
+
+    .autocomplete-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .autocomplete-dropdown.show {
+      display: block;
+    }
+
+    .autocomplete-item {
+      padding: 12px 16px;
+      cursor: pointer;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      transition: background 150ms;
+    }
+
+    .autocomplete-item:last-child {
+      border-bottom: none;
+    }
+
+    .autocomplete-item:hover,
+    .autocomplete-item.selected {
+      background: var(--accent-bg);
+    }
+
+    .autocomplete-item mark {
+      background: transparent;
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">sum<span class="inserted">u</span>m<span class="inserted">ar</span>ary</h1>
+    <p class="subtitle">Guess what movie is being described by expanding the description below</p>
+
+    <div class="hint-counter">
+      <span class="eye-icon">👁️</span>
+      <span id="hintCount">0</span> hints
+    </div>
+
+    <div class="guess-container">
+      <div class="autocomplete-container">
+        <input type="text" class="guess-input" id="guessInput" placeholder="Enter your guess..." autocomplete="off">
+        <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
+      </div>
+      <button class="guess-btn" id="guessBtn">Guess</button>
+    </div>
+
+    <div id="feedback"></div>
+
+    <select class="movie-select" id="movieSelect">
+      <option value="">— Select a movie —</option>
+    </select>
+
+    <div class="tree-container" id="treeContainer">
+      <p class="hint">Select a movie above to begin exploring its summary.</p>
+    </div>
+  </div>
+
+  <script>
+    // Movie files list (populated from directory)
+    const MOVIES = [
+      "12 Angry Men (1957 film)",
+      "12th Fail",
+      "2001: A Space Odyssey",
+      "3 Idiots",
+      "American History X",
+      "Apocalypse Now",
+      "Avengers: Endgame",
+      "Avengers: Infinity War",
+      "Back to the Future",
+      "Braveheart",
+      "Cinema Paradiso",
+      "City Lights",
+      "Come and See",
+      "Das Boot",
+      "Django Unchained",
+      "Dr. Strangelove",
+      "Dune: Part Two",
+      "Eternal Sunshine of the Spotless Mind",
+      "Fight Club",
+      "Forrest Gump",
+      "Good Will Hunting",
+      "Goodfellas",
+      "Grave of the Fireflies",
+      "High and Low (1963 film)",
+      "Ikiru",
+      "Incendies",
+      "Inception",
+      "Inglourious Basterds",
+      "It's a Wonderful Life",
+      "Life Is Beautiful",
+      "Léon: The Professional",
+      "Memento (film)",
+      "Modern Times (film)",
+      "Oldboy (2003 film)",
+      "Once Upon a Time in America",
+      "Once Upon a Time in the West",
+      "One Flew Over the Cuckoo's Nest (film)",
+      "Paths of Glory",
+      "Pulp Fiction",
+      "Raiders of the Lost Ark",
+      "Rear Window",
+      "Requiem for a Dream",
+      "Return of the Jedi",
+      "Saving Private Ryan",
+      "Schindler's List",
+      "Seven (1995 film)",
+      "Seven Samurai",
+      "Singin' in the Rain",
+      "Spider-Man: Across the Spider-Verse",
+      "Spider-Man: Into the Spider-Verse",
+      "Spirited Away",
+      "Star Wars (film)",
+      "Terminator 2: Judgment Day",
+      "The Apartment",
+      "The Dark Knight Rises",
+      "The Dark Knight",
+      "The Departed",
+      "The Empire Strikes Back",
+      "The Godfather Part II",
+      "The Godfather",
+      "The Good, the Bad and the Ugly",
+      "The Great Dictator",
+      "The Green Mile (film)",
+      "The Intouchables",
+      "The Lion King",
+      "The Lives of Others",
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Return of the King",
+      "The Lord of the Rings: The Two Towers",
+      "The Matrix",
+      "The Pianist (2002 film)",
+      "The Prestige",
+      "The Shawshank Redemption",
+      "The Silence of the Lambs (film)",
+      "The Usual Suspects",
+      "Toy Story 3",
+      "Toy Story",
+      "WALL-E",
+      "Whiplash (2014 film)",
+      "Witness for the Prosecution (1957 film)",
+      "Your Name"
+    ];
+
+    const LEVELS = ["level_5", "level_4", "level_3", "level_2", "level_1"];
+
+    let currentData = null;
+    let parsedLevels = {};
+    let visibleNodes = [];
+    let currentMovie = null;
+    let guessCount = 0;
+    let clickCount = 0;
+    let hasWon = false;
+
+    // Select a random movie on load
+    function selectRandomMovie() {
+      const randomIndex = Math.floor(Math.random() * MOVIES.length);
+      currentMovie = MOVIES[randomIndex];
+      guessCount = 0;
+      clickCount = 0;
+      hasWon = false;
+      document.getElementById("feedback").innerHTML = "";
+      document.getElementById("guessInput").value = "";
+      document.getElementById("guessInput").disabled = false;
+      document.getElementById("guessBtn").disabled = false;
+      updateHintCounter();
+      loadMovie(currentMovie);
+    }
+
+    // Normalize movie name for comparison
+    function normalizeTitle(title) {
+      return title
+        .toLowerCase()
+        .replace(/[\(\)]/g, "")  // remove parentheses
+        .replace(/\s*(film|movie)\s*/g, "")  // remove "film" or "movie"
+        .replace(/\d{4}/g, "")  // remove years
+        .replace(/[^a-z0-9\s]/g, "")  // remove special chars
+        .replace(/\s+/g, " ")  // normalize spaces
+        .trim();
+    }
+
+    // Update hint counter display
+    function updateHintCounter() {
+      document.getElementById("hintCount").textContent = clickCount;
+    }
+
+    // Check guess
+    function checkGuess() {
+      if (hasWon) return;
+      
+      const guess = document.getElementById("guessInput").value.trim();
+      if (!guess) return;
+      
+      guessCount++;
+      const normalizedGuess = normalizeTitle(guess);
+      const normalizedAnswer = normalizeTitle(currentMovie);
+      
+      const feedbackEl = document.getElementById("feedback");
+      
+      if (normalizedGuess === normalizedAnswer) {
+        hasWon = true;
+        document.getElementById("guessInput").disabled = true;
+        document.getElementById("guessBtn").disabled = true;
+        feedbackEl.innerHTML = `
+          <div class="win-message">
+            <h2>🎉 Correct!</h2>
+            <p>The movie was <strong>${escapeHtml(currentMovie)}</strong></p>
+            <p>You got it in ${guessCount} guess${guessCount !== 1 ? "es" : ""} using ${clickCount} hint${clickCount !== 1 ? "s" : ""}!</p>
+            <button class="play-again-btn" onclick="selectRandomMovie()">Play Again</button>
+          </div>
+        `;
+      } else {
+        feedbackEl.innerHTML = `
+          <div class="feedback wrong">
+            ❌ "${escapeHtml(guess)}" is not correct. Keep trying! (${guessCount} guess${guessCount !== 1 ? "es" : ""})
+          </div>
+        `;
+        document.getElementById("guessInput").value = "";
+        document.getElementById("guessInput").focus();
+      }
+    }
+
+    // Initialize Fuse.js for fuzzy search
+    const fuse = new Fuse(MOVIES, {
+      threshold: 0.3,
+      includeScore: true,
+      ignoreLocation: true
+    });
+
+    let selectedIndex = -1;
+    const guessInput = document.getElementById("guessInput");
+    const dropdown = document.getElementById("autocompleteDropdown");
+
+    // Autocomplete functionality
+    function updateAutocomplete() {
+      const query = guessInput.value.trim();
+      
+      if (!query || hasWon) {
+        dropdown.classList.remove("show");
+        return;
+      }
+
+      const results = fuse.search(query).slice(0, 8);
+      
+      if (results.length === 0) {
+        dropdown.classList.remove("show");
+        return;
+      }
+
+      dropdown.innerHTML = results.map((result, idx) => 
+        `<div class="autocomplete-item" data-index="${idx}" data-movie="${escapeHtml(result.item)}">${escapeHtml(result.item)}</div>`
+      ).join("");
+      
+      dropdown.classList.add("show");
+      selectedIndex = -1;
+    }
+
+    // Handle autocomplete item click
+    dropdown.addEventListener("click", (e) => {
+      const item = e.target.closest(".autocomplete-item");
+      if (item) {
+        guessInput.value = item.dataset.movie;
+        dropdown.classList.remove("show");
+        guessInput.focus();
+      }
+    });
+
+    // Handle keyboard navigation
+    guessInput.addEventListener("keydown", (e) => {
+      const items = dropdown.querySelectorAll(".autocomplete-item");
+      
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+        updateSelection(items);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        selectedIndex = Math.max(selectedIndex - 1, -1);
+        updateSelection(items);
+      } else if (e.key === "Enter") {
+        if (selectedIndex >= 0 && items[selectedIndex]) {
+          e.preventDefault();
+          guessInput.value = items[selectedIndex].dataset.movie;
+          dropdown.classList.remove("show");
+          checkGuess();
+        } else {
+          checkGuess();
+        }
+      } else if (e.key === "Escape") {
+        dropdown.classList.remove("show");
+      }
+    });
+
+    function updateSelection(items) {
+      items.forEach((item, idx) => {
+        item.classList.toggle("selected", idx === selectedIndex);
+      });
+      if (selectedIndex >= 0 && items[selectedIndex]) {
+        items[selectedIndex].scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    // Update autocomplete on input
+    guessInput.addEventListener("input", updateAutocomplete);
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".autocomplete-container")) {
+        dropdown.classList.remove("show");
+      }
+    });
+
+    // Event listeners for guessing
+    document.getElementById("guessBtn").addEventListener("click", checkGuess);
+    guessInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter" && selectedIndex < 0) {
+        checkGuess();
+      }
+    });
+
+    // Populate movie dropdown (hidden, but kept for structure)
+    const movieSelect = document.getElementById("movieSelect");
+    MOVIES.forEach(movie => {
+      const opt = document.createElement("option");
+      opt.value = movie;
+      opt.textContent = movie;
+      movieSelect.appendChild(opt);
+    });
+
+    async function loadMovie(movieName) {
+      try {
+        const response = await fetch(`../data/level_summaries/${encodeURIComponent(movieName)}.txt`);
+        if (!response.ok) throw new Error("File not found");
+        const text = await response.text();
+        currentData = JSON.parse(text);
+        parsedLevels = {};
+        LEVELS.forEach(level => {
+          parsedLevels[level] = parseSummaryLevel(currentData[level] || "");
+        });
+        // Start with single node covering all 16 level_1 indices
+        visibleNodes = [{ start: 0, end: 16 }];
+        render();
+      } catch (err) {
+        document.getElementById("treeContainer").innerHTML =
+          `<p class="hint">Error loading movie: ${err.message}</p>`;
+      }
+    }
+
+    function parseSummaryLevel(text) {
+      // Split by numbered items or newlines
+      const lines = text.split(/\n/).map(s => s.trim()).filter(Boolean);
+      return lines.map(line => line.replace(/^\d+[\.\)]\s*/, "").trim());
+    }
+
+    function getLevelAndIndex(start, end) {
+      // Determine which level and index a range corresponds to
+      const span = end - start;
+      if (span === 16) return { level: 0, idx: 0 };      // level_5: 1 item
+      if (span === 8) return { level: 1, idx: Math.floor(start / 8) };  // level_4: 2 items
+      if (span === 4) return { level: 2, idx: Math.floor(start / 4) };  // level_3: 4 items
+      if (span === 2) return { level: 3, idx: Math.floor(start / 2) };  // level_2: 8 items
+      if (span === 1) return { level: 4, idx: start };   // level_1: 16 items
+      return { level: 4, idx: start };
+    }
+
+    function render() {
+      const container = document.getElementById("treeContainer");
+      container.innerHTML = "";
+
+      // Reset button
+      if (visibleNodes.length > 1 || (visibleNodes.length === 1 && visibleNodes[0].end - visibleNodes[0].start < 16)) {
+        const resetBtn = document.createElement("button");
+        resetBtn.className = "reset-btn";
+        resetBtn.textContent = "↩ Reset to top level";
+        resetBtn.addEventListener("click", () => {
+          visibleNodes = [{ start: 0, end: 16 }];
+          render();
+        });
+        container.appendChild(resetBtn);
+      }
+
+      // Grid container
+      const grid = document.createElement("div");
+      grid.className = "tree-grid";
+
+      visibleNodes.forEach((nodeRange, nodeIdx) => {
+        const { level, idx } = getLevelAndIndex(nodeRange.start, nodeRange.end);
+        const levelKey = LEVELS[level];
+        const items = parsedLevels[levelKey] || [];
+        const text = items[idx] || "(No text)";
+        const span = nodeRange.end - nodeRange.start;
+        const isLeaf = span === 1;
+
+        const node = document.createElement("div");
+        let widthClass = "";
+        if (level === 1) widthClass = " width-half";      // level_4
+        else if (level >= 2) widthClass = " width-quarter"; // level_3, level_2, level_1
+        node.className = "node" + (!isLeaf ? " clickable" : " leaf") + widthClass;
+        node.innerHTML = `<p>${escapeHtml(text)}</p>`;
+
+        if (!isLeaf) {
+          node.addEventListener("click", () => {
+            // Increment click counter
+            clickCount++;
+            updateHintCounter();
+            // Split this node into two children
+            const mid = nodeRange.start + span / 2;
+            const newNodes = [
+              ...visibleNodes.slice(0, nodeIdx),
+              { start: nodeRange.start, end: mid },
+              { start: mid, end: nodeRange.end },
+              ...visibleNodes.slice(nodeIdx + 1)
+            ];
+            visibleNodes = newNodes;
+            render();
+          });
+        }
+
+        grid.appendChild(node);
+      });
+
+      container.appendChild(grid);
+
+      // Count visible cards
+      const cardCount = visibleNodes.length;
+      const allLeaves = visibleNodes.every(n => n.end - n.start === 1);
+
+      const hint = document.createElement("p");
+      hint.className = "hint";
+      if (allLeaves) {
+        hint.textContent = `Fully expanded: ${cardCount} sentences at the most detailed level.`;
+      } else {
+        hint.textContent = `${cardCount} card${cardCount !== 1 ? "s" : ""} visible. Click any card to expand into more detail.`;
+      }
+      container.appendChild(hint);
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // Start the game automatically
+    selectRandomMovie();
+  </script>
+</body>
+</html>
