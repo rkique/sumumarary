@@ -326,6 +326,14 @@
       color: var(--accent);
       font-weight: 600;
     }
+
+    .movie-photo {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
   </style>
 </head>
 <body>
@@ -502,10 +510,13 @@
         hasWon = true;
         document.getElementById("guessInput").disabled = true;
         document.getElementById("guessBtn").disabled = true;
+        const photoUrl = getPhotoUrl(currentMovie);
+        const photoHtml = photoUrl ? `<img src="${photoUrl}" alt="${escapeHtml(currentMovie)}" class="movie-photo">` : "";
         feedbackEl.innerHTML = `
           <div class="win-message">
             <h2>🎉 Correct!</h2>
             <p>The movie was <strong>${escapeHtml(currentMovie)}</strong></p>
+            ${photoHtml}
             <p>You got it in ${guessCount} guess${guessCount !== 1 ? "es" : ""} using ${clickCount} hint${clickCount !== 1 ? "s" : ""}!</p>
             <button class="play-again-btn" onclick="selectRandomMovie()">Play Again</button>
           </div>
@@ -729,7 +740,7 @@
       const hint = document.createElement("p");
       hint.className = "hint";
       if (allLeaves) {
-        hint.textContent = `Fully expanded: ${cardCount} sentences at the most detailed level.`;
+        hint.textContent = `Fully expanded: ${cardCount} sentences at the most detailed level. Movie: ${currentMovie}`;
       } else {
         hint.textContent = `${cardCount} card${cardCount !== 1 ? "s" : ""} visible. Click any card to expand into more detail.`;
       }
@@ -740,6 +751,19 @@
       const div = document.createElement("div");
       div.textContent = text;
       return div.innerHTML;
+    }
+
+    function getPhotoUrl(movieName) {
+      // Convert movie name to photo filename
+      // Photos use spaces instead of special characters like colons and parentheses
+      const baseFilename = movieName
+        .replace(/\s*\([^)]*\)\s*/g, " ")  // remove parentheses and their contents, replace with space
+        .replace(/:/g, "")                  // remove colons
+        .replace(/\s+/g, " ")               // normalize multiple spaces to single space
+        .trim();
+      
+      // Return the filename - try jpg first as that's the most common
+      return `../data/photos/${encodeURIComponent(baseFilename + ".jpg")}`;
     }
 
     // Start the game automatically

@@ -11,7 +11,20 @@ LEVEL_FOLDER_PATH = "level_summaries"
 TEXT_FOLDER_PATH = "text_summaries"
 
 def level_summarization_prompt(count, lines, text):
-    prompt = f"Create exactly {count} one-line summaries from the following plot summary. Do not use any names of places or people. Keep the sentence structure simple. Each summary should summarize {lines} lines each, keep each summary under 20 words in length. The summaries can refer to each other, and should form a cohesive narrative. \n\n Plot summary:\n{text}"
+    summarization_guide = f"""
+    Summarization Guide
+    - Do not use any names of places or people. 
+    - Keep each summary under 20 words.
+    - The summaries can refer to each other, and should form a cohesive narrative.
+    - Avoid linking predicates and coordinating conjunctions. Here is a badly written example for 'The Matrix': 'A hacker learns reality is fake, escapes captivity, saves allies, and gains power.' 
+    - Here is a well written version of the same: 'A hacker learns that reality is simulated, fulfilling a prophecy while escaping captivity.'
+    """
+
+    prompt = f"""
+    Create exactly {count} one-line summaries from the following plot summary, summarizing {lines} lines each. The summary should follow the summarization guide below. \n\n {summarization_guide} \n\n
+    Here is the plot summary:\n{text}
+    """
+
     return prompt
 
 class Summary:
@@ -32,7 +45,7 @@ class Summary:
         response = client.chat.completions.create(
             model= "gpt-5.2",
             messages=[
-                {"role": "user", "content": level_summarization_prompt(count, lines, text)}
+                {"role": "user", "content": level_summarization_prompt(count, lines, self.source_text)}
             ]
         )
         return response.choices[0].message.content
