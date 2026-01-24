@@ -1,0 +1,48 @@
+name: Publish webapp index.html to website repo
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - README.md
+      - docs/**
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout app repo
+        uses: actions/checkout@v4
+
+      - name: Checkout website repo
+        uses: actions/checkout@v4
+        with:
+          repository: rkique/next-blog
+          token: ${{ secrets.WEBSITE_REPO_TOKEN }}
+          path: website
+
+      - name: Copy app repo into website repo
+        run: |
+          mkdir -p website/public/summary
+          rsync -av --delete \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='node_modules' \
+            ./ website/public/summary/
+
+      - name: Commit and push if changed
+        run: |
+          cd website
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add public/webapp/index.html
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update webapp index.html from app repo (${GITHUB_SHA::7})"
+          git push
+          
