@@ -20,17 +20,19 @@ jobs:
           repository: rkique/next-blog
           token: ${{ secrets.WEBSITE_REPO_TOKEN }}
           path: website
-
+      
       - name: Copy app repo into website repo
+        shell: bash
         run: |
           mkdir -p website/public/summary
-          rsync -av --delete \
+          rsync -av --delete-after \
             --exclude='.git' \
             --exclude='.github' \
             --exclude='node_modules' \
             --exclude='.next' \
-            ./ website/public/summary/ || [ $? -eq 24 ]
-
+            ./ website/public/summary/ || rc=$?
+          if [ "${rc:-0}" -ne 0 ] && [ "${rc:-0}" -ne 24 ]; then exit "$rc"; fi
+          
       - name: Commit and push if changed
         run: |
           cd website
