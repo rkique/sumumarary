@@ -28,7 +28,8 @@ jobs:
             --exclude='.git' \
             --exclude='.github' \
             --exclude='node_modules' \
-            ./ website/public/summary/
+            --exclude='.next' \
+            ./ website/public/summary/ || [ $? -eq 24 ]
 
       - name: Commit and push if changed
         run: |
