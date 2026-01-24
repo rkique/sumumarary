@@ -1,0 +1,345 @@
+    .page-title {   
+      font-size: 64px;
+      font-family: 'Unica One', sans-serif;
+      cursor: default;
+    }
+
+    .page-title .inserted {
+      display: inline-block;
+      max-width: 1em;
+      overflow: hidden;
+      color: var(--text-muted);
+      transition: max-width 200ms ease;
+    }
+
+    .page-title:hover .inserted {
+      max-width: 0;
+    }
+
+    :root {
+      --bg: #f5f0e6;
+      --card-bg: #ebe5d9;
+      --border: #c9c3b5;
+      --accent: #1a5f3c;
+      --accent-bg: #e6dfd0;
+      --accent-border: #b8b2a3;
+      --text: #1a5f3c;
+      --text-muted: #5b9c78;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 32px 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0 0 24px;
+      color: var(--text-muted);
+      font-size: 18px;
+    }
+
+    .movie-select {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      margin-bottom: 24px;
+      cursor: pointer;
+    }
+
+    .tree-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+    }
+
+    .level-label {
+      display: inline-block;
+      padding: 6px 12px;
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .tree-grid {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .node {
+      background: var(--card-bg);
+      border: 1px solid var(--text);
+      border-radius: 0;
+      padding: 14px 16px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      transition: transform 160ms ease, box-shadow 160ms ease, border 160ms ease;
+      cursor: default;
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    .node.width-half,
+    .node.width-quarter {
+      width: 100%;
+    }
+
+    .node.clickable {
+      cursor: pointer;
+      background: var(--accent-bg);
+      border-color: var(--text);
+    }
+
+    .node.clickable:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: 2px dotted var(--text);
+    }
+
+    .node.leaf {
+      background: var(--card-bg);
+      border-color: var(--text);
+    }
+
+    .node p {
+      margin: 0;
+    }
+
+    .hint {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    .reset-btn {
+      padding: 8px 16px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background 150ms;
+    }
+
+    .reset-btn:hover {
+      background: #e2e8f0;
+    }
+
+    .guess-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .guess-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .guess-input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      color: var(--text);
+    }
+
+    .guess-input:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .guess-btn {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 150ms, color 150ms, border-color 150ms;
+    }
+
+    .guess-btn:hover {
+      background: #145030;
+    }
+
+    .giveup-btn {
+      background: transparent;
+      color: var(--accent);
+      border: 2px solid var(--accent);
+    }
+
+    .giveup-btn:hover {
+      background: var(--accent-bg);
+      color: var(--accent);
+    }
+
+    .feedback {
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .feedback.wrong {
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }
+
+    .feedback.correct {
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }
+
+    .win-message {
+      text-align: center;
+      padding: 32px;
+      background: #f0fdf4;
+      border: 2px solid #166534;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    .win-message h2 {
+      color: #166534;
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .win-message p {
+      color: #166534;
+      margin: 0 0 16px;
+    }
+
+    .play-again-btn {
+      padding: 5px 12px;
+      background: #166534;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .movie-select {
+      display: none;
+    }
+
+    .guess-count {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .hint-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .hint-counter .eye-icon {
+      font-size: 16px;
+    }
+
+    .autocomplete-container {
+      position: relative;
+      flex: 1;
+      width: 100%;
+    }
+
+    .autocomplete-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+
+    .autocomplete-dropdown.show {
+      display: block;
+    }
+
+    .autocomplete-item {
+      padding: 12px 16px;
+      cursor: pointer;
+      color: var(--text);
+      border-bottom: 1px solid var(--border);
+      transition: background 150ms;
+    }
+
+    .autocomplete-item:last-child {
+      border-bottom: none;
+    }
+
+    .autocomplete-item:hover,
+    .autocomplete-item.selected {
+      background: var(--accent-bg);
+    }
+
+    .autocomplete-item mark {
+      background: transparent;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .movie-photo {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin: 16px 0;
+    }
