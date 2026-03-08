@@ -82,11 +82,6 @@
       <option value="">— Select a country —</option>
     </select>
 
-    <div class="hint-counter">
-      <span class="eye-icon">👁️</span>
-      <span id="hintCount">0</span> splits
-    </div>
-
     <div class="tree-container" id="treeContainer">
       <p class="hint">Select a country above to begin exploring its summary.</p>
     </div>
@@ -102,6 +97,17 @@
       </div>
     </div>
 
+    <button class="tutorial-btn" onclick="openTutorial()">?</button>
+
+    <div id="tutorialOverlay" class="tutorial-overlay">
+      <div class="tutorial-modal">
+        <button class="close-btn" onclick="closeTutorial()">&times;</button>
+        <h2>Welcome to doubletake!</h2>
+        <p class="tutorial-text">In this game, you can click cards to split them:</p>
+        <div class="tutorial-demo" id="tutorialDemo"></div>
+        <button class="guess-btn" style="width:50%;margin-top:18px;display:block;margin-left:auto;margin-right:auto;" onclick="closeTutorial()">OK</button>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -131,7 +137,6 @@
 
     // Valid Disney indices (movies with level_summaries)
     const VALID_DISNEY_INDICES = [1,2,3,4,5,6,7,8,9,10,11,12,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,49];
-
     const subtitle = document.getElementById("subtitle");
     const modeSelect = document.getElementById("modeSelect");
 
@@ -281,7 +286,7 @@
       document.getElementById("guessInput").disabled = false;
       document.getElementById("guessBtn").disabled = false;
       document.getElementById("giveUpBtn").disabled = false;
-      updateHintCounter();
+
       loadItem(currentItemFile);
     }
 
@@ -296,10 +301,6 @@
         .replace(/[^a-z0-9\s]/g, "")
         .replace(/\s+/g, " ")
         .trim();
-    }
-
-    function updateHintCounter() {
-      document.getElementById("hintCount").textContent = clickCount;
     }
 
     function checkGuess() {
@@ -466,7 +467,7 @@
       document.getElementById("guessInput").disabled = false;
       document.getElementById("guessBtn").disabled = false;
       document.getElementById("giveUpBtn").disabled = false;
-      updateHintCounter();
+
       loadItem(currentItemFile);
     });
 
@@ -630,7 +631,7 @@
         if (!isLeaf) {
           node.addEventListener("click", () => {
             clickCount++;
-            updateHintCounter();
+      
             animateSplit(nodeIdx, nodeRange);
           });
         }
@@ -649,7 +650,7 @@
       if (allLeaves) {
         hint.textContent = `Fully expanded: ${cardCount} sentences at the most detailed level. ${label.charAt(0).toUpperCase() + label.slice(1)}: ${currentItemTitle || ""}`;
       } else {
-        hint.textContent = `${cardCount} card${cardCount !== 1 ? "s" : ""} visible. Click any card to expand into more detail.`;
+        hint.textContent = `${cardCount} card${cardCount !== 1 ? "s" : ""} visible.`;
       }
       container.appendChild(hint);
     }
@@ -697,10 +698,126 @@
       if (e.target === modal) closeEmailModal();
     });
 
+    // Tutorial
+    const TUTORIAL_PARENT = "He founded a lasting school and wrote dialogues teaching ideal Forms and philosopher rulers.";
+    const TUTORIAL_CHILD_A = "He wrote dialogues using a questioning teacher while proposing an unseen realm of perfect Forms.";
+    const TUTORIAL_CHILD_B = "He founded a math centered school then failed to shape a tyrant into a philosopher king.";
+    let tutorialInterval = null;
+
+    function openTutorial() {
+      const overlay = document.getElementById("tutorialOverlay");
+      overlay.style.display = "flex";
+      startTutorialLoop();
+    }
+    function closeTutorial() {
+      document.getElementById("tutorialOverlay").style.display = "none";
+      stopTutorialLoop();
+      localStorage.setItem("tutorialSeen", "1");
+    }
+    window.addEventListener("click", (e) => {
+      if (e.target === document.getElementById("tutorialOverlay")) closeTutorial();
+    });
+
+    function stopTutorialLoop() {
+      if (tutorialInterval) { clearTimeout(tutorialInterval); tutorialInterval = null; }
+    }
+
+    function startTutorialLoop() {
+      stopTutorialLoop();
+      resetTutorialDemo();
+      scheduleTutorialSplit();
+    }
+
+    function resetTutorialDemo() {
+      const demo = document.getElementById("tutorialDemo");
+      demo.innerHTML = "";
+      const card = document.createElement("div");
+      card.className = "node clickable";
+      card.innerHTML = `<p>${escapeHtml(TUTORIAL_PARENT)}</p>`;
+      demo.appendChild(card);
+    }
+
+    function scheduleTutorialSplit() {
+      tutorialInterval = setTimeout(() => {
+        if (document.getElementById("tutorialOverlay").style.display !== "flex") return;
+        runTutorialSplit();
+      }, 1200);
+    }
+
+    async function runTutorialSplit() {
+      const demo = document.getElementById("tutorialDemo");
+      const card = demo.querySelector(".node");
+      if (!card) return;
+
+      // Touch circle pop
+      const circle = document.createElement("div");
+      circle.className = "touch-circle";
+      const rect = card.getBoundingClientRect();
+      const demoRect = demo.getBoundingClientRect();
+      circle.style.left = (rect.left - demoRect.left + rect.width * 0.45) + "px";
+      circle.style.top = (rect.top - demoRect.top + rect.height * 0.5) + "px";
+      demo.appendChild(circle);
+      requestAnimationFrame(() => circle.classList.add("animate"));
+      setTimeout(() => circle.remove(), 500);
+
+      // Simulate press effect
+      card.style.transform = "translate(4px, 4px)";
+      card.style.boxShadow = "none";
+      await new Promise(r => setTimeout(r, 150));
+      card.style.transform = "";
+      card.style.boxShadow = "";
+
+      // Animate height expansion to show both texts
+      const currentHeight = card.offsetHeight;
+      card.style.height = currentHeight + "px";
+      card.style.overflow = "hidden";
+      card.style.transition = "height 250ms ease";
+      card.innerHTML = `<p>${escapeHtml(TUTORIAL_CHILD_A)}</p><p style="margin-top:8px">${escapeHtml(TUTORIAL_CHILD_B)}</p>`;
+
+      // Measure target
+      card.style.height = "auto";
+      const targetHeight = card.offsetHeight;
+      card.style.height = currentHeight + "px";
+
+      requestAnimationFrame(() => { card.style.height = targetHeight + "px"; });
+      await new Promise(r => setTimeout(r, 300));
+
+      card.style.height = "";
+      card.style.overflow = "";
+      card.style.transition = "";
+
+      await new Promise(r => setTimeout(r, 300));
+
+      // Split into two separate cards
+      const nodeA = document.createElement("div");
+      nodeA.className = "node clickable";
+      nodeA.innerHTML = `<p>${escapeHtml(TUTORIAL_CHILD_A)}</p>`;
+
+      const nodeB = document.createElement("div");
+      nodeB.className = "node clickable";
+      nodeB.innerHTML = `<p>${escapeHtml(TUTORIAL_CHILD_B)}</p>`;
+      nodeB.style.marginTop = "0px";
+      nodeB.style.transition = "margin-top 200ms ease";
+
+      card.replaceWith(nodeA, nodeB);
+      requestAnimationFrame(() => { nodeB.style.marginTop = ""; });
+      await new Promise(r => setTimeout(r, 250));
+
+      // Hold, then reset
+      tutorialInterval = setTimeout(() => {
+        if (document.getElementById("tutorialOverlay").style.display !== "flex") return;
+        resetTutorialDemo();
+        scheduleTutorialSplit();
+      }, 1500);
+    }
+
     // Boot
     (async () => {
       await loadModeData(currentMode);
       selectRandomItem();
+      if (!localStorage.getItem("tutorialSeen")) {
+        openTutorial();
+      }
     })();
   </script>
 </body>
