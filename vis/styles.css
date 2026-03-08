@@ -1,7 +1,8 @@
-    .page-title {   
+    .page-title {
       font-size: 64px;
       font-family: Arial, Helvetica, sans-serif;
       cursor: default;
+      word-spacing: -8px;
     }
 
     .page-title .inserted {
@@ -343,6 +344,53 @@
       height: auto;
       border-radius: 8px;
       margin: 16px 0;
+    }
+
+    .title-box {
+      display: inline-block;
+      padding: 4px 14px;
+      margin: 0 0px 0 0;
+      color: transparent;
+      background: transparent;
+      color: var(--accent);
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: 1.2;
+      position: relative;
+      top: -3px;
+    }
+    .title-box::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 8px 8px 2px 8px;
+      border: 3px solid #000000;
+      translate: 0px 0px;
+      pointer-events: none;
+    }
+
+
+    .title-doublebox {
+      display: inline-block;
+      position: relative;
+      padding: 10px 15px 0px 14px;
+      margin: 0;
+      border: 3px solid #000000;
+      background: transparent;
+      color: var(--accent);
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: 1.2;
+      top: 3px;
+    }
+
+    .title-doublebox::after {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border: 3px solid #000000;
+      translate: 10px 15px;
+      pointer-events: none;
     }
 
     .mode-select {
