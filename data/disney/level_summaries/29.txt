@@ -1,0 +1,7 @@
+{
+  "level_5": "A bear is framed for theft and imprisoned for years.",
+  "level_4": "A bear buys a gift. A thief steals it. He is jailed.  \n\nHe escapes to expose the thief. He is saved. His aunt arrives.",
+  "level_3": "He works hard to buy a gift for his aunt.  \nHe sees a robbery. He gets framed. He goes to prison.  \nHe befriends a cook. His family searches for the thief.  \nHe escapes. He survives a crash. He reunites with his aunt.",
+  "level_2": "He works small jobs to buy a gift book.  \nHe sees a burglary at the shop. He is framed.  \nHe is convicted. He is sent to prison.  \nA prison cook hires him in the kitchen.  \nHis family searches for proof. Officials reject their evidence.  \nHe escapes with inmates. He leaves them behind.  \nHe boards a departing train in disguise. The thief traps him.  \nHe is rescued. He is cleared. His aunt arrives to visit.",
+  "level_1": "He lives with a kind family.  \nHe saves money for a special birthday gift.  \nHe works odd jobs for his savings.  \nHe sees a burglary in a shop.  \nA treasured book gets stolen.  \nHe chases the thief.  \nHe gets framed and arrested.  \nHe gets sentenced to ten years in prison.  \nA prison cook recruits him for the kitchen.  \nHis family searches for proof of the real thief.  \nThey find costumes hidden in a neighbour's attic.  \nPolice refuse their evidence.  \nHe feels forgotten after a missed visit.  \nHe escapes prison with other inmates.  \nHe abandons them after their betrayal.  \nHe exposes the thief and gets cleared as his aunt arrives."
+}

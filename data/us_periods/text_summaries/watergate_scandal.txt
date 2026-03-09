@@ -1,0 +1,383 @@
+1970s political scandal in the U.S.
+"Watergate" redirects here. For the buildings, see Watergate complex. For other uses, see Watergate (disambiguation).
+For a chronological guide, see Timeline of the Watergate scandal.
+
+A view of the Watergate complex in Washington, D.C., with the Howard Johnson's motel to the left, with legal notation from the trial of the White House Plumbers
+
+The Watergate scandal, or simply Watergate, was a political scandal in the United States involving the administration of President Richard Nixon. On June 17, 1972, operatives associated with Nixon's 1972 re-election campaign were caught burglarizing and planting listening devices in the Democratic National Committee headquarters at Washington, D.C.'s Watergate complex. Nixon's efforts to conceal his administration's involvement led to an impeachment process and his resignation in August 1974.
+
+Emerging from the White House's efforts to stop leaks, the break-in was an implementation of Operation Gemstone, enacted by mostly Cuban burglars led by former intelligence agents E. Howard Hunt and G. Gordon Liddy. After the arrests, investigators and reporters like The Washington Post's Bob Woodward and Carl Bernstein—guided by the source "Deep Throat"—exposed a White House political espionage program illegally funded by donor contributions. Nixon denied involvement but his administration destroyed evidence, obstructed investigators, and bribed the burglars. This cover-up initially worked, helping Nixon win a landslide re-election, until revelations from the burglars' 1973 trial led to a Senate investigation.
+
+Mounting pressure led Attorney General Elliot Richardson to appoint Archibald Cox as Watergate special prosecutor. Cox subpoenaed Nixon's Oval Office tapes—suspected to include Watergate conversations—but Nixon invoked executive privilege to block their release, triggering a constitutional crisis. In the "Saturday Night Massacre", Nixon fired Cox, forcing the resignations of the attorney general and his deputy and fueling suspicions of Nixon's involvement. Nixon released select tapes, although one was partially erased and two others disappeared. In April 1974, Cox's replacement Leon Jaworski reissued the subpoena, but Nixon provided only redacted transcripts. In July, the Supreme Court ordered the tapes' release, and the House Judiciary Committee recommended impeachment for obstructing justice, abuse of power, and contempt of Congress. The White House released the "Smoking Gun" tape, showing that Nixon ordered the CIA to stop the FBI's investigation. Facing impeachment, on August 9, 1974, Nixon became the first U.S. president to resign. In total, 69 people were charged for Watergate—including two cabinet members—and most pleaded guilty or were convicted. Nixon was pardoned by his successor, Gerald Ford.
+
+Watergate, often considered the greatest presidential scandal, tarnished Nixon's legacy and had electoral ramifications for the Republican Party: heavy losses in the 1974 midterm elections and Ford's failed 1976 reelection bid. Despite significant coverage, no consensus exists on the motive for the break-in or who specifically ordered it. Theories range from an incompetent break-in by rogue campaign officials to a sexpionage operation or CIA plot. The scandal generated over 30 memoirs and left such an impression that it is common for scandals, even outside politics or the United States, to be named with the suffix -gate.
+
+Prelude
+See also: Timeline of the Watergate scandal
+
+Leaks and early wiretapping
+Further information: Presidency of Richard Nixon and Pentagon Papers
+Nixon giving his staple V sign in Pennsylvania during his 1968 campaign
+
+Richard Nixon was elected the 37th president of the United States in 1968. He inherited American involvement in the Vietnam War, which he promised to end honorably. Seeking to force a diplomatic resolution, he secretly expanded bombing to Cambodia. When The New York Times exposed the bombing in May 1969, Nixon ordered the wiretapping of reporters and suspected leakers. After the Federal Bureau of Investigation (FBI) could not bug some targets, Nixon's domestic policy chief John Ehrlichman directly arranged the wiretapping. Nixon's discontent with the FBI also led him to hire New York Police Department detectives Jack Caulfield and Anthony Ulasewicz as private investigators.
+
+In June 1971, The New York Times started publishing the Pentagon Papers: a leaked 7,000-page study of U.S. involvement in Vietnam, commissioned in 1967. Leaked by analyst Daniel Ellsberg, the papers exposed government deception about the war's progress. Nixon was initially unworried, as the Pentagon Papers predated his presidency, but National Security Advisor Henry Kissinger—furious as Ellsberg was his mentee—pushed Nixon into what White House chief of staff H. R. Haldeman called a "frenzy". Attorney General John Mitchell filed a restraining order against the Times, halting the papers' publication. The Washington Post began to publish the papers instead, and the Times case traveled to the Supreme Court, which ruled against Nixon. The episode was, according to journalist Garrett Graff, a "self-inflicted ... disaster".
+
+The White House Plumbers
+Further information: White House Plumbers and Watergate Seven
+
+"We've got a damn counter-government here and we've got to fight it. I don't give a damn how it is done, do whatever has to be done to stop these leaks. I don't want to be told why it can't be done. This government cannot survive, it cannot function if anyone can run out and leak."
+
+Retired CIA officer E. Howard Hunt and former FBI agent G. Gordon Liddy (pictured 1964) were the handlers of the five Watergate burglars.
+
+After the Supreme Court's ruling, Nixon told aide Chuck Colson to stop all leaks by any means. Nixon fixated on files at the Brookings Institution on the Chennault Affair, which implicated him in the sabotage of 1968 Vietnam peace talks, and urged aides to "get in and get those files—blow the safe and get it". Nixon advisors had previously drafted the Huston Plan, which proposed expanded domestic surveillance and tactics like "surreptitious entry" (burglary).
+
+For the Brookings burglary, Colson recruited retired Central Intelligence Agency (CIA) agent E. Howard Hunt, who had helped arrange the 1954 Guatemalan coup d'état and the failed 1961 Bay of Pigs Invasion of Cuba. The plot escalated into a planned firebombing with burglars posing as firefighters: White House Counsel John Dean halted the operation. Their focus shifted to leaker Ellsberg: Hunt was teamed with aides Egil Krogh and David Young in the new "Special Investigations Unit". Former FBI agent G. Gordon Liddy also joined the group, which he dubbed "ODESSA" after a rumored Nazi Schutzstaffel group. Young's grandmother, misunderstanding leaks, suggested another name: the "Plumbers".
+
+Seeking compromising material, the Plumbers targeted Ellsberg's psychiatrist, Lewis Fielding. Krogh approved a burglary of his Los Angeles office: "Hunt/Liddy Project #1". Hunt enlisted Cuban collaborators from the Bay of Pigs: CIA veteran Bernard Barker—who had served under Cuban dictator Fulgencio Batista—and anti-Castro exiles Eugenio Martínez and Felipe De Diego. The September 3 burglary reportedly failed, the Cubans finding no Ellsberg files and staging an addict's rampage after accidentally damaging the safe. De Diego said that they found and photographed Ellsberg's records, and Fielding reported that Ellsberg's health files were in his office and appeared to have been "fingered". Liddy later suspected that Hunt had deceived him, photographing the files and sending them instead to the CIA. Hunt and Liddy then planned to burglarize Fielding's home but were stopped by Ehrlichman.
+
+The Plumbers next plotted to discredit Ellsberg by drugging him with LSD at a Washington gala, but White House approval came too late. They revived the Brookings firebombing scheme, proposing to buy a fire engine for firefighter‑disguised Cubans, which the White House ultimately deemed too costly. Other projects included investigating Ted Kennedy's Chappaquiddick accident, assessing whether Hoover should be made to leave the FBI, and forging a cable to link John F. Kennedy to the 1963 assassination of South Vietnamese president Ngô Đình Diệm. The Plumbers also helped discover that the Pentagon was surveilling the White House via a leaker on the National Security Council, outraging an increasingly paranoid Nixon. Collectively, the Plumbers' schemes are often called the "White House horrors", a phrase coined by Attorney General Mitchell.
+
+Committee for the Re-Election of the President
+Attorney General John Mitchell (left) resigned to lead the CRP, which also hired former CIA officer James McCord (right) as its head of security.
+
+As Nixon prepared for his 1972 re-election campaign, Caulfield proposed Operation Sandwedge: a private-sector intelligence operation against the Democrats. White House officials deemed the plan too moderate and doubted Caulfield's competence: Liddy was selected to head the project before it was scrapped. In December 1971, Liddy instead became general counsel for the Committee for the Re-Election of the President (CRP)—the fundraising arm of Nixon's re-election campaign—introduced by deputy campaign manager Jeb Stuart Magruder as "our man in charge of dirty tricks". The CRP also recruited retired CIA officer James McCord as its security chief.
+
+With Hunt, Liddy devised Operation Gemstone, a set of covert campaign schemes pitched to Attorney General Mitchell on January 27. These included Operation Diamond: kidnapping, drugging, and detaining in Mexico likely protesters during the 1972 Republican National Convention. The plan, nicknamed Nacht und Nebel after an Adolf Hitler directive, would be enacted by an "Einsatzgruppe" of mobsters that Hunt said had committed 22 murders. Other plots included Operation Emerald, a spy airliner to trail the Democratic nominee; Operation Turquoise, Cuban commandos sabotaging air-conditioning at the Democrats' 1972 Miami convention; and Operation Sapphire, a boat with sex workers to entrap Democrats at the convention. Mitchell rejected the plots as unrealistic and expensive, requesting a simpler Gemstone.
+
+In February, Mitchell resigned to become CRP director. Although disputed by Graff and biographer James Rosen, Mitchell is generally believed to have approved Liddy's next version of Gemstone, which proposed burglarizing and bugging the office of Larry O'Brien at the Democratic National Committee's (DNC) headquarters within D.C.'s Watergate Complex, the Fontainebleau Hotel suites of top Democrats during their Miami convention, and the campaign headquarters of the eventual nominee. As another break-in target, Mitchell or Magruder suggested Las Vegas Sun publisher Hank Greenspun's office. The desired material may have involved possible Democratic nominee Edmund Muskie or the financial dealings of reclusive billionaire Howard Hughes with Nixon or his brother Donald Nixon. Although—according to Hunt and Liddy—the burglary was abandoned after Hughes would not provide a getaway plane, Greenspun's office showed evidence of forced entry, and Ehrlichman told Nixon in 1973 that Hunt and Liddy "flew out [to Las Vegas], broke his safe, got something out" [sic].
+
+Oval Office taping system
+Main article: Nixon White House tapes
+A Sony tape-recorder used by Nixon to record all conversations in the Oval Office
+
+After his election, Nixon made the Army Signal Corps remove a taping system used by predecessor Lyndon B. Johnson in the Oval Office. By 1971, Nixon worried that his presidency would not be sufficiently preserved for posterity and had the Secret Service install microphones in his desk and throughout the room. The system was deliberately kept secret from those close to Nixon, including his secretary, Rose Mary Woods. From February 16, 1971 to July 12, 1973, the system recorded 3,432 hours of conversation. According to Graff, the tapes were ultimately "the root cause of [Nixon's] downfall". No president since Nixon is known to have taped White House conversations, although President Donald Trump suggested that he did.
+
+Cite error: There are <ref group=lower-alpha> tags or {{efn}} templates on this page, but the references will not show without a {{reflist|group=lower-alpha}} template or {{notelist}} template (see the help page).
+
+Watergate break-ins
+
+Assembling the crew
+Eugenio Martínez, one of the Cuban burglars
+
+Following the May 1972 death of FBI director Hoover, Colson asked the CRP to send counterprotestors to a protest at Hoover's state funeral in the Capitol rotunda. Hunt and Liddy again recruited Bay of Pigs collaborators: Barker flew to D.C. with nine men from Miami. After the counterprotest, according to Lukas, Barker's team may have committed two unsolved burglaries in Washington, those of the Chilean Embassy and of a major Democratic law firm within the Watergate Complex on May 16. The counterprotest may also have been a ruse to bring the Cubans to D.C. to burglarize Hoover's home in search of alleged kompromat used to blackmail politicians.
+
+After meeting with Hunt in Miami, Barker selected the men for the DNC break-in planned for Memorial Day weekend: Martínez, as photographer; Virgilio Gonzalez, as lockpicker; and De Diego, Reinaldo Pico, and Frank Sturgis as guards. Sturgis was the only non-Cuban member, but he had fought alongside Castro during the Cuban Revolution. Pico and De Diego were dropped because McCord forgot two walkie-talkies. After a planning session with McCord and Hunt at the Hamilton Hotel near the White House, Barker's team checked into the Watergate Hotel on May 26. McCord recruited former FBI agent Alfred Baldwin III to perform the wiretapping and monitor the telephone conversations afterward; he was booked at the Howard Johnson's motel opposite the Watergate.
+
+Initial attempts and May 28 break-in
+The Watergate Complex and its parking garage entrance (pictured 1982), through which the Plumbers first broke into the Democratic National Committee office on May 28, 1972
+
+The Plumbers attempted a break-in on the night of May 26, when Hunt and seven others posed as executives in a banquet room located beneath the Watergate office building and connected to the office's stairwell. This effort failed when Hunt and Martínez, after hiding in a closet to evade a night guard, were unable to pick the lock and were stuck in the banquet room overnight. A concurrent, spontaneous plot led by Liddy with the Cubans—the bugging of George McGovern's D.C. campaign headquarters—failed on two nights when a lone volunteer was seen working late. On May 27, a second DNC break-in failed after Gonzalez lacked proper tools for the DNC office's door; he flew back to Miami to retrieve them.
+
+On May 28, Gonzalez and Sturgis entered the office on their third attempt, approaching via the garage. They were joined by Barker, who sought files on Cuban contributions and had Martínez photograph convention security files, and McCord, who bugged the phones of both staffer R. Spencer Oliver and O'Brien's secretary. After the team left the office, McCord was unable to pick up one of the wiretap transmitters—that of O'Brien's secretary—with his remote receiver. In the following weeks, Baldwin recorded hundreds of calls on Oliver's wiretap, including many sexual conversations from secretaries using his phone. Liddy delivered the phone transcripts and developed photos to Magruder and a disappointed Mitchell, who dismissed them as "shitty".
+
+On June 12, Magruder asked Liddy to photograph all documents in the office. Later that day, Baldwin, directed by Liddy, visited the Watergate DNC office under the guise of a nephew of former DNC chairman John Bailey and was given a tour of the floor. Two days later, Liddy told Hunt that the DNC break-in would be reattempted. On June 16, Barker's team returned to D.C. and checked into the Watergate.
+
+June 17 break-in
+Chapstick radio microphones discovered in E. Howard Hunt's White House safe after the burglary
+
+For the May 28 break-in, Sturgis and Gonzalez had used tape to cover latches and prevent doors locking. On the night of June 17, McCord volunteered to tape the doors but did so horizontally such that excess tape was visible on the sides. He then returned to Baldwin's listening post at the Howard Johnson's, where Hunt called him to ask if the DNC office was empty. McCord reported a lone staffer: Bruce Givner, an intern calling friends. At around 12:45, Givner left the office, and security guard Frank Wills began his shift. At 1 a.m., Wills removed the garage door tape, assuming a worker left it. Stumbling upon Givner, Wills left to eat with him at the Howard Johnson's.
+
+Accounts differ on which burglar decided to proceed with the operation after the tape removal was found. Regardless, McCord rejoined the burglars, and Gonzalez repicked and retaped the door. Reaching the DNC office, the burglars abandoned picking the lock and removed the door from the hinges instead. At around 1:50 a.m., Wills returned and discovered the new tape and called the police. An unmarked Metropolitan Police cruiser, belonging to a special undercover vice squad disguised as hippies, arrived within three minutes. Baldwin, acting as spotter, saw the car but ignored it. He contacted Hunt, however, when the officers turned on the eighth floor lights. Hunt dismissed it as the night guard, and the team continued installing a new bug disguised as a smoke detector.
+
+The three Metropolitan officers swept the ninth floor and, after finding a taped door on the sixth floor, began searching the DNC offices. Baldwin radioed Hunt that three armed men were approaching. McCord and the four others, hiding behind a partition, surrendered to the officers under false names. Hunt and Liddy escaped their hotel room in a Jeep, leaving behind traceable items in the team's two hotel suites, and told Baldwin to flee. Hunt drove to the White House, where he dumped electronic equipment in a safe and took $10,000: the three men then slept at their respective homes. The arrested burglars' listening devices led the Metropolitan police to involve the FBI under the presumption of a federal intercepted communications violation; by June 23, a federal grand jury of 23 D.C. residents began hearing testimony.
+
+Cite error: There are <ref group=lower-alpha> tags or {{efn}} templates on this page, but the references will not show without a {{reflist|group=lower-alpha}} template or {{notelist}} template (see the help page).
+
+Motives
+Main article: Watergate break-in motives
+Theories on motive range from files on an escort ring allegedly linked to the CIA or White House Counsel John Dean's (left) partner to illicit Howard Hughes contributions (seen right, on a 1948 Time cover).
+
+The purpose of the Watergate break-in and who ultimately ordered the operation has never been established and has spawned conspiracist literature akin to that on the Kennedy assassination. No one was ever charged for ordering the burglary, and the Plumbers' accounts conflict. According to Graff, the burglars may have had "two or even three distinct and separate motives" and deceived even each other.
+
+The simplest theory is that Watergate was an incompetent break-in to bug O'Brien, emerging from White House paranoia, and that Hunt, Liddy, and McCord were overzealous and acted without proper oversight. Alternative theories often focus on the bugging of the relatively minor staffer Oliver, which investigators could not explain. Although Dean said that Oliver was accidentally bugged, the FBI found that Martinez carried a key matching the locked desk of Oliver's secretary.
+
+Kompromat
+See also: Kompromat and Sexpionage
+
+A common theory argues that the burglars sought "dirt" on the Democrats, specifically involving illegal Democratic finances or sexual scandals. Both Dean and Magruder said that the break-in sought to expose the Democrats for "cutting deals" with donors to fund their convention. Hunt testified that he told the Cubans to photograph files on finances and contributions: the Cubans believed they were looking for files linking the Democrats to funding from Castro.
+
+In 1980, Liddy conversely wrote that the break-in's purpose "was to find out what O'Brien had of a derogatory nature about us", often suggested to be files on illegal contributions to Nixon, possibly CIA-linked, from the Greek junta or Howard Hughes. A sexual blackmail theory, as advanced in Secret Agenda (1984) and Silent Coup (1992), alleges a link either between Oliver and a high-end escort service, or that Dean feared Democrat-held files linking his partner to a D.C. escort ring run by lawyer Phillip Mackin Bailley, or both. Liddy and Ehrlichman endorsed this theory, and Colson called it "one of the most plausible explanations". Dean rejected it as "baloney", and Oliver's secretary sued Liddy regarding the claims.
+
+CIA involvement and other theories
+
+"Even if we should learn the Administration was victimized by a CIA plot—even if we should learn the motive for the burglary—that would change nothing regarding our understanding of John Mitchell's 'White House horrors.' Nor would it mitigate the resulting inter-institutional conflicts and encounters, which raised profound constitutional and political questions, or the constitutional crisis generated by the Administration's behavior in the wake of the burglary. That behavior resulted in the special crimes of cover-up and obstruction by high Administration officials—up to and including the President of the United States."
+
+A prominent theory, supported by Colson and Haldeman, alleges that the CIA sabotaged the break-in or the cover-up to smear Nixon—with whom it had a tense relationship—or to conceal ties to the Bailley escort ring or ally Howard Hughes. In January 1974, according to Colson, Nixon nearly removed CIA director William Colby over such suspicions; that June, Senator Howard Baker released an inconclusive report on CIA complicity. Beyond the burglars' past roles in CIA plots, both McCord and Hunt had been CIA agents, Hunt continued to work for a firm that was a CIA cover, and Martínez was on the CIA's payroll throughout Watergate. The CIA also had unexplained insight into the plot, helped Hunt develop the Fielding photographs, and did not cooperate with investigators.
+
+A "sixth man" theory links McCord's periodic absences to the possible presence of Lou Russell, a CRP security guard allegedly linked to the escort ring and CIA. Another theory noted by Stanley Kutler suggests that Colson and Hunt were rogue operatives and proceeded with a version of Gemstone that also targeted election rival George Wallace and, after Wallace's attempted assassination, sought to plant leftist literature at the shooter's home—a story broken by Seymour Hersh.
+
+The final major theory, according to Graff, is that the Democrats or Metropolitan Police had foreknowledge of the burglary and "sprung a trap" or were somehow alerted by McCord or Hunt. Proponents note that the responding Metropolitan squad were coincidentally vice officers with experience dismantling D.C. sex work.
+
+Cite error: There are <ref group=lower-alpha> tags or {{efn}} templates on this page, but the references will not show without a {{reflist|group=lower-alpha}} template or {{notelist}} template (see the help page).
+
+Cover-up and investigations
+
+Reactions and destruction of evidence
+Address book of Bernard Barker, discovered in a room at the Watergate Hotel, June 18, 1972
+
+On the morning of June 18, Liddy visited the CRP, destroyed Gemstone files, and reported the arrests to Magruder. Nixon was informed shortly thereafter. Later that day, federal prosecutors Earl Silbert and Chuck Work searched the burglars' hotel rooms: they found spying gear, $100 bills, papers mentioning Hunt, Barker's address books (listing "WH"), and Martínez's telephone directory (listing "W. House"). Investigators learned that the burglars had given pseudonyms, that McCord worked for the CRP, and that the White House had conducted a background check on Hunt. The burglars did not cooperate with the FBI or in court. Visited by FBI agents, Hunt admitted that a check found at Watergate was his but refused further comment.
+
+On June 19, CIA agent Lee Pennington Jr. destroyed incriminating material at McCord's home. The CRP conducted a "massive housecleaning": Magruder burned Gemstone files at his home, and Colson destroyed pages in the White House phone directory listing Hunt. Nixon made his first public statement on Watergate on June 22, denying White House involvement.
+
+Following Ehrlichman's orders, Dean had Hunt's White House safe drilled open; Ehrlichman told Dean to "deep six" incriminating files in the Potomac River. As a Secret Service agent and two aides had seen the files' removal, Dean feared perjuring himself in future testimony. On June 27, he instead gave nonsensitive files to the FBI and sensitive files—on the Fielding burglary and other Plumber activities—directly to acting FBI director L. Patrick Gray. Dean personally destroyed two Hunt notebooks and an address book, and Gray burned the surrendered files around Christmas 1972.
+
+Early press investigations
+Washington Post reporters Bob Woodward and Carl Bernstein, 2024
+
+Shortly after the break-in, DNC counsel Joseph Califano Jr. notified The Washington Post: editor Barry Sussman assigned veteran journalist Alfred Lewis and the novices Bob Woodward and Carl Bernstein to the story. The team found that four of the burglars were Cuban exiles; Woodward attended the burglars' preliminary hearing, where McCord admitted to being former CIA. The Washington Post's next issue contained three stories on Watergate, but the scandal received negligible coverage from papers like The New York Times.
+
+Based on the address book and letters found in the burglar's suite, Woodward and Bernstein contacted the White House switchboard and asked for Hunt. They were connected to "Mr. Colson's office" and then referred to Hunt's office at the Mullen Company PR Firm. They were able to reach Hunt, who hung up.
+
+Contacting acquaintances, they learned that Hunt was "with the CIA" and that McCord had created a presidential list of "domestic radicals" and a censorship plan in case of a national emergency. Based on Sussman's research on Colson, the trio published a headline implicating the White House: "White House Consultant Linked to Bugging Suspects". Press attention on the "Watergate caper" grew from other outlets. The New York Times' Latin-American specialist Tad Szulc connected the Cuban burglars to past CIA plots and Hunt to the Bay of Pigs.
+
+Kidnapping of Martha Mitchell
+Main article: Martha Mitchell § June 1972 kidnapping, aftermath and vindication
+After the burglary, Martha Mitchell was kidnapped and sedated.
+
+Martha Mitchell, the wife of CRP head John Mitchell, was a vocal Nixon supporter and, according to Graff, "perhaps the first national conservative celebrity pundit". After the arrests, John Mitchell distanced the CRP from McCord—who had previously been assigned to guard Martha—claiming he was just an outside security contractor. Through aides, he unsuccessfully tried to prevent Martha from seeing news about McCord. Furious at the deception, Martha had a nervous episode. If her husband would not leave politics, she threatened to permanently leave D.C. and contact UPI reporter Helen Thomas. In a locked bedroom of a Newport Beach villa, Martha's call to Thomas was interrupted when bodyguard Steve King broke down the door, destroyed the phone, and restrained her.
+
+A thwarted morning escape attempt from King resulted in Martha slicing her hand on a broken glass door. A doctor visited the house and forcibly sedated Martha, who was restrained and had her pants removed by FBI and Secret Service agents. Other escape attempts also failed. Her concerned husband had her flown to the Westchester Country Club in New York, where she called Thomas, stating that "I'm black and blue. I'm a political prisoner". She was then interviewed by the New York Daily News. John and his team denied Martha's account and blocked the FBI from interviewing her. On June 30, less than two weeks after the break-in, John Mitchell resigned to tend to his wife and because he had become a liability for Nixon.
+
+"Smoking Gun" conversation
+Further information: Nixon White House tapes § "Smoking Gun" tape
+Part of the "Smoking Gun" tape of Nixon and Haldeman discussing how to pressure the CIA into stopping the FBI investigation
+
+The FBI traced $4,500 from the burglars' suite to Barker's account, which had received $89,000 in four Mexican checks and a $25,000 check from the CRP's Midwest finance chairman Kenneth Dahlberg, closing in on the "money trail" source: CRP contributions. The FBI's progress—including a hypothesis by the Washington field office head that Watergate was "in furtherance of the White House efforts to locate and identify 'leaks'"—alarmed the White House. As Gray was considering CIA involvement, Dean, Haldeman, and Mitchell plotted to have the CIA pressure the FBI to drop its probe under the pretense of national security. On June 23, Nixon approved the plan and instructed Haldeman in a recorded conversation known as the "Smoking Gun" tape:
+
+"... When you get in (inaudible) people, say 'Look, the problem is that this will open the whole, the whole Bay of Pigs thing, and the President just feels that ah, without going into the details — don't, don't lie to them to the extent to say no involvement, but just say this is a comedy of errors, without getting into it, the President believes that it is going to open the whole Bay of Pigs thing up again. And, ah, because these people are plugging for (inaudible) and that they should call the FBI in and (inaudible) don't go any further into this case period!'" 
+
+Haldeman and Ehrlichman relayed this message to CIA director Richard Helms and deputy director Vernon Walters in a White House meeting: Helms agreed to pressure the FBI to end their investigation by claiming that it might reveal CIA money laundering. Although he threatened to resign, Walters reluctantly repeated this message to Gray; he refused to halt the investigation unless the CIA put the request in writing, which it rebuffed.
+
+The meaning of "the whole Bay of Pigs thing" has drawn much attention. Helms deemed it "incoherent"; investigators for the Senate Select Committee on Intelligence suspected it referred to the then-secret CIA assassination attempts on Cuban leader Castro but did not raise the subject with Nixon during 1975 testimony. Haldeman's memoir said it was Nixon's "way of reminding Helms, not so gently, of the cover-up of the CIA assassination attempts on the hero of the Bay of Pigs, Fidel Castro, a CIA operation that may have triggered the Kennedy tragedy and which Helms desperately wanted to hide." Journalist Jefferson Morley cites another tape in which Nixon mentions "the 'Who shot John?' angle" to support Haldeman's interpretation.
+
+Deep Throat
+Further information: Deep Throat (Watergate) and Mark Felt
+FBI associate director Mark Felt, revealed to be "Deep Throat" in 2005, was labeled by The New York Times as "the most famous anonymous source in American history".
+
+In 1971, Hoover made Mark Felt deputy associate director and his apparent successor. Felt was spurned after Hoover's 1972 death when Nixon selected L. Patrick Gray as acting director (avoiding a pre-election Senate confirmation). Gray named Felt as acting associate director. Hoping to become director, Felt sought to undermine Gray through leaks.
+
+Woodward first met Felt in 1970, and he became a key anonymous source. No one else at the Post knew his identity; editor Howard Simons dubbed him "Deep Throat", referencing both his deep background status and the 1972 pornographic film Deep Throat. Woodward and Bernstein also relied on the anonymous "Z": a female grand juror.
+
+Felt gave Woodward many early Watergate leads but soon avoided the telephone. According to Woodward, Felt created a covert protocol to schedule 2 a.m. rendezvous in an underground garage in Rosslyn, Virginia. The system involved Woodward placing a flag on his sixth floor apartment's balcony and Felt intercepting and notating Woodward's daily The New York Times. Felt also leaked to The Washington Daily News and Time's Sandy Smith; other FBI agents, like the Washington field office head, were also likely leakers.
+
+Woodward and Bernstein's role in Watergate is often exaggerated, and some, including Post managing editor Ben Bradlee and biographer Adrian Havill, have criticized their account as overly cinematic and have identified inaccuracies. Edward Jay Epstein wrote that their reporting was derivative or the mere presentation of leaks. Woodward has said that "the mythologizing of our role in Watergate has gone to the point of absurdity, where journalists write ... that I, single-handedly, brought down Richard Nixon. Totally absurd."
+
+Obstruction and bribery
+Following the death of E. Howard Hunt's wife Dorothy on United Air Lines Flight 553, Bay of Pigs invasion leader Manuel Artime (seen far left with President Kennedy in 1962) dispersed the hush money.
+
+By July, Baldwin was granted immunity by the FBI and provided their first major insight into Watergate. The administration grew concerned over $250,000 in CRP funds authorized for Liddy's operations, of which $199,000 was used. That month, Magruder pressed CRP treasurer Hugh Sloan to fabricate a narrative of CRP payments to Liddy, suggesting perjury. Sloan, conflicted, confided to two lawyers, fled to California, and then returned to D.C. a week later to resign from the CRP. He confessed to the U.S. attorney's office and gave truthful grand jury testimony.
+
+Alarmed, Mitchell convened with Magruder, Dean, and Nixon advisor Fred LaRue to concoct a cover. They decided to inflate funding for Liddy's less illicit activities, such as campus surveillance of radicals, and convinced aide Herbert Porter to perjure himself. Their motto became "The buck stops with Liddy", who was fired from the CRP to create distance. Other efforts including delaying FBI interviews on "national security" grounds, coaching witnesses, and having Dean and assistant Fred Fielding sit in on FBI interviews of White House staff. They also disrupted the grand jury by making staffers testify privately at the DOJ, rather than before jurors that could assess their credibility. Throughout the grand jury investigation, prosecutors Silbert and especially Henry Petersen were overly deferent to Nixon.
+
+Before the burglary, an unknown official had assured Liddy that the Plumbers would be "taken care of" financially if caught. Liddy reminded Mitchell of this, leading Dean to unsuccessfully ask CIA deputy director Walters to front hush money. Dean then convinced Nixon's former deputy campaign finance manager Herbert Kalmbach to provide the bribes. Ulasewicz delivered $180,000 in cash to the Plumbers, dispersed by Hunt's wife and, after her death on United Air Lines Flight 553, by Bay of Pigs invasion leader Manuel Artime.
+
+Patman probe and indictment of the Plumbers
+The cover-up enabled Nixon to win re-election in 1972 in the largest landslide in American history.
+
+In August 1972, the Government Accountability Office released an audit of Nixon's re-election campaign, referring $350,000 in questionable transactions to the DOJ for prosecution. The DOJ did not pursue these, and Nixon declined to appoint a special prosecutor. Wright Patman, the Democrat House Banking Committee chair, initiated his own probe. Like the FBI, his committee was stonewalled by the White House.
+
+In September, O'Brien's legal team—all of whom also worked for the Post—interviewed Baldwin, yielding a front-page story for Woodward and Bernstein. Felt used the story to shift leaking suspicion to other FBI staffers, and Silbert made the FBI search his office and the grand jury room for bugs: none were found. Another wiretap of unclear origin was found in Oliver's DNC office. On September 13, the Patman probe released a confidential report on the Mexican transactions: the findings were leaked to the Post. Fearing more revelations, Nixon used House Republican leader Gerald Ford to stop the probe from gaining subpoena power.
+
+On September 15, Hunt, Liddy, and the five burglars were indicted on eight counts, none relating to the misuse of campaign funds. The limited indictment, sparing Nixon officials, was a White House victory, and Eisenhower appointee John Sirica assigned himself as judge. Baldwin then gave his complete account of Watergate to the Los Angeles Times' Jack Nelson and Ronald Ostrow. Although Hunt's lawyers and Silbert convinced Sirica to issue a gag order and advise the Times against publication, the paper printed the story—the first directly linking the break-in to the White House—on October 5. The cover-up proved effective, and Democrats could not make Watergate a campaign issue. Although most Americans knew of the break-in, few associated it with Nixon, and in November he won re-election in the largest landslide in American history, winning 49 of 50 states.
+
+Trial
+Jack Caulfield thrice met with James McCord alongside the George Washington Parkway to dissuade him from cooperating with prosecutors.
+
+On January 6, 1973, Dean promised Liddy $30,000 annually, legal fees, and a 1975 pardon if he stayed silent; as early as January 8, Nixon discussed "Goddamn hush money" with Colson. Two days later, the trial began, the Silbert-led prosecution arguing that McCord and Liddy were rogue agents and that Hunt and the other burglars acted on Liddy's payments. Hunt and the Cubans unexpectedly pleaded guilty. Using Sturgis as a source, The New York Times' Seymour Hersh—who had exposed the My Lai massacre—revealed that the burglars were receiving hush money and were pressured to plead guilty. Questioned by Sirica, the Cubans refused to say who sent the payments.
+
+The White House learned that McCord, who had expressed concerns that he or the CIA might be scapegoated, was considering cooperating with prosecutors. Through Ulasewicz, Dean promised McCord an eventual government job and his family's financial security. To calm McCord, Caulfield thrice met with him alongside the George Washington Parkway. McCord proposed that the trial could be dismissed if prosecutors introduced telephone conversations regarding Watergate that he had made to the Israeli and Chilean embassies—both of which were illegally wiretapped. Dean rejected this approach.
+
+In the trial's only interruption, Oliver's lawyer Charles Morgan convinced Sirica and Silbert to suspend the trial to stop Baldwin from describing the conversations from Oliver's wiretap: an appeals court sealed the transcripts. As of 2022, these remain secret and are, according to Graff, "the last and potentially only chance to [know] whether... the burglary and wiretapping plot included a sexual motive." In resumed testimony, administration officials denied involvement in the break-in. Dissatisfied with Silbert's examination, Sirica made the unusual move to interrogate the officials privately. On January 30, the jury found the last two defendants—Liddy and McCord—guilty on all counts, and Sirica scheduled sentencing for March 23. After setting bail at $100,000 each on February 2, he declared that he was "still not satisfied that all pertinent facts that might be available... have been produced before an American jury".
+
+Ervin Committee and the "Dean Report"
+Further information: Nixon White House tapes and United States Senate Watergate Committee
+
+In addition to the trial's perceived failure, a multi-month, secret inquiry by Senator Ted Kennedy raised Congress' suspicions about Watergate. On February 7, 1973, the Senate voted 77–0 to establish a select committee to investigate Watergate, naming Senator Sam Ervin of North Carolina as chairman. Ervin in turn selected Samuel Dash as chief counsel. The Ervin Committee took over files created by both Ted Kennedy and the Patman probe.
+
+Due to his loyalty, Nixon nominated Gray as FBI director. During his confirmation proceedings, Gray admitted that he had given the bureau's investigative Watergate reports to John Dean, alarming both his own agents and the senators. In a bid to save his nomination, Gray offered the reports to Congress, which was vetoed by an infuriated Nixon. In late February, Nixon devised two ways to stop the committee: executive privilege—a then-vague doctrine that the Constitution's separation of powers prevented presidential disclosure to Congress—and the release of an exonerative "Dean Report". The report was, according to Graff, "mythic" as Dean had never conducted a real investigation of Watergate and was himself involved.
+
+On March 21, Dean told Nixon that "I have the impression that you don't know everything I know" and gave a full account of Watergate—which he called "a cancer within"—particularly blaming Liddy and Magruder. Although Nixon seemed largely ignorant and asked over 150 questions, Dean was sometimes surprised by Nixon's knowledge of the plot, including the hush money and Fielding break-in. At another confirmation hearing the following day, Gray testified that Dean had lied about his ignorance of the opening of Hunt's safe, damaging Dean's credibility and leading Gray to withdraw his nomination.
+
+McCord, Dean, and Magruder cooperate
+By the end of April, both Jeb Magruder (pictured) and John Dean were cooperating with prosecutors.
+
+At the March 23 sentencing, Judge Sirica read a confession from McCord that the Plumbers were told to plead guilty; perjury occurred; others were involved; and the Cubans were misled to think that Watergate was a CIA operation. Sirica tabled McCord's sentencing and gave maximum sentences to Liddy, Hunt, and the Cubans. McCord identified false testimony to the Ervin Committee, implicating Magruder and Dean, and leaked his account—mostly hearsay through Liddy—to the Los Angeles Times. Press attention on Watergate exploded, and the Ervin Committee uncovered Gemstone, the destruction of evidence, and the Liddy payments.
+
+In April, Dean and Magruder began cooperating with prosecutors, exposing the Fielding break-in and the cover-up complicity of Magruder, Mitchell, Haldeman, and Ehrlichman—but not Nixon. Liddy refused to testify before the grand jury and was held in contempt. By the end of April, Nixon—to save face—made Ehrlichman, Haldeman, Magruder, and Attorney General Richard Kleindienst resign; Dean was fired on April 30.
+
+Watergate scrutiny spawned probes into other abuses, including a "dirty tricks" campaign by Donald Segretti; Kissinger-ordered wiretaps that led to Felt's resignation; B-52 bombings in Cambodia; illegal CRP donations from firms like American Airlines; and an off-record $200,000 from investor Robert Vesco that led to the May 10 indictment of Mitchell and CRP finance chairman Maurice Stans. Later that month, Congressman William Mills committed suicide after it emerged that he had taken an unreported $25,000 from a CRP slush fund. In July, Nixon was hospitalized with pneumonia, possibly caused by the stress of Watergate; acting White House Counsel Leonard Garment wrote that "The organizing objective of these investigations was to bleed Nixon to death".
+
+Ervin hearings and Special Prosecutor Cox
+
+"If the many allegations to this date are true, then the burglars who broke into the headquarters of the Democratic National Committee at the Watergate were, in effect, breaking into the home of every citizen of the United States. And if these allegations prove true, what they were seeking to steal were not the jewels, money, or other property of American citizens, but something more valuable—their most precious heritage: the right to vote in a free election."
+
+The Ervin Committee's public hearings began on May 17. Testimony from McCord, Caulfield, Ulasewicz, and others suggested White House involvement in the break-in and cover-up, which Nixon vehemently denied. The hearings—which also included testimony from Dean, Magruder, and Mitchell—drew immense publicity: three in four American households watched live testimony, an average of 30 hours per home.
+
+In concurrent Senate proceedings, Attorney General nominee Elliot Richardson agreed to appoint a special prosecutor on Watergate. After rejecting Nixon's suggestions, Richardson chose Archibald Cox—President Kennedy's solicitor general. They negotiated that Cox could only be fired by Richardson and only due to "extraordinary improprieties". Cox built a legal team he called the Watergate Special Prosecution Force. As early as July 4, Nixon expressed a desire to fire Cox after the Force considered investigating the financial impropriety of his California estate, La Casa Pacifica. In August, the Force empaneled a second grand jury to pursue crimes beyond the break-in, such as campaign finance irregularities.
+
+Struggle for the tapes
+Special prosecutor on Watergate Archibald Cox in 1973
+
+On July 13, Haldeman assistant Alexander Butterfield revealed the existence of the Oval Office tapes to the Ervin Committee. In urgent meetings, White House counsel J. Fred Buzhardt and Vice President Spiro Agnew suggested the tapes be destroyed. Nixon did not destroy the tapes for unclear reasons, possibly to preserve his legacy, protect himself against perjury or Kissinger's aggrandizement, or because he did not believe he would ever have to surrender them.
+
+Following Butterfield's revelation, Cox and the Ervin Committee formally subpoenaed tapes corresponding to meetings suspected to involve Watergate. Nixon rejected both subpoenas, leading to objections in court. Due to stronger standing under the separation of powers, Sirica prioritized the executive branch Cox over the legislative Ervin committee.
+
+Nixon's legal team—led by Charles Alan Wright—invoked executive privilege and argued that releasing the tapes would create a precedent allowing judicial access to all sensitive presidential material. Cox asserted that executive privilege did not apply when criminality was suspected, and also cited United States v. Burr, in which Chief Justice John Marshall ruled that President Thomas Jefferson could be subpoenaed. In a decision that upset both parties, Sirica ordered the tapes be submitted to him to determine if any were protected by executive privilege. This was appealed, and on October 12 the appeals court ruled 5–2 to force Nixon to surrender the tapes to Sirica, or to make a deal with Cox.
+
+Saturday Night Massacre
+Main article: Saturday Night Massacre
+Attorney General Elliot Richardson (right)—seen with Senator John Stennis (left)—resigned when ordered by Nixon to fire Special Prosecutor Cox.
+
+During October, Cox and the Force made progress on Watergate-related investigations, including securing a grand jury indictment of Krogh for false declarations on the Fielding break-in, and guilty pleas from American Airlines, Goodyear, and the 3M Company for illegal contributions to the CRP. Cox also began investigating Nixon's closest friend Bebe Rebozo for mediating an illicit $100,000 campaign contribution from Howard Hughes.
+
+After weighing the appellate decision, Nixon proposed giving Sirica the tapes and then firing Cox to negate the appeals court case; Attorney General Richardson rejected the scheme. Negotiations with Cox to drop the subpoena and have Senator John Stennis review the tapes also collapsed. On October 19—citing the need for stability in the Middle East amid the Yom Kippur War—Nixon unexpectedly announced that Stennis would review the tapes: a deal not approved by Stennis, the Ervin Committee, Cox, or Richardson.
+
+On October 20, in what became known as the Saturday Night Massacre, Nixon ordered Richardson to fire Cox. He refused and resigned in protest. Nixon then ordered Deputy Attorney General William Ruckelshaus to fire Cox, but Ruckelshaus declined and was fired after offering his resignation. The next acting attorney general, Solicitor General Robert Bork, agreed to fire Cox. FBI agents sealed the Force's office and blocked the entry of Cox's staff. Though Bork believed Nixon's order was legal and justified, he considered resigning to avoid being "perceived as a man who did the President's bidding to save my job".
+
+Cite error: There are <ref group=lower-alpha> tags or {{efn}} templates on this page, but the references will not show without a {{reflist|group=lower-alpha}} template or {{notelist}} template (see the help page).
+
+Impeachment process and resignation
+Main article: Impeachment process against Richard Nixon
+
+Massacre aftermath
+The Saturday Night Massacre led to protests and the October 30 launch of an impeachment inquiry by the House Judiciary Committee under Chairman Peter Rodino (right).
+
+The Saturday Night Massacre triggered a constitutional crisis and drew wide condemnation and calls for Nixon's resignation or impeachment. Congress received an unprecedented near-500,000 mailgrams and telegrams, and protests were held outside the White House. Nixon's approval rating fell to 24 percent; 98 representatives and 57 senators introduced bills calling for another special prosecutor. Nixon, under severe stress, withdrew from engagements and drank: in his absence, Kissinger briefly declared DEFCON 3 when Soviet deployment in the Yom Kippur War seemed imminent.
+
+At an October 26 press conference, Nixon denounced the "hysterical reporting" and promised to appoint another special prosecutor, although with limited access to presidential material. Representatives introduced over 20 impeachment and impeachment-inquiry resolutions; the House Judiciary Committee launched an impeachment inquiry on October 30 and granted Chairman Peter Rodino subpoena power.
+
+Missing tapes and building pressure
+
+On October 30, Buzhardt informed Sirica that two of the nine subpoenaed tapes—a June 20, 1972 Nixon-Mitchell call and an April 15, 1973 Nixon–Dean meeting—were "missing". Secret Service agents and aides testified that the tapes had been signed out and not returned; aides like Buzhardt inconsistently said they never existed due to recorder malfunctions or insufficient tape. Investigators discovered a tape labeled "April 15 Part I", implying a missing "Part II". 
+
+Nixon's "I am not a crook" defense (recording below) was delivered at the Contemporary Resort at Walt Disney World. 
+
+On November 1, Nixon and Haig selected as special prosecutor Leon Jaworski, a former Nuremberg prosecutor presumed to be sympathetic to the president. Impeachment calls grew, including from the editors of The New York Times and Time and—for the first time—from a Republican Senator, Edward Brooke. Buzhardt and Garment flew to Miami to urge a vacationing Nixon to resign; he refused to see them.
+
+Tipped off by Dean, Senator Lowell Weicker and investigators uncovered likely tax fraud: Nixon had claimed deductions for an illegally backdated document donation to the National Archives—a loophole outlawed in 1969 after President Johnson exploited it. The investigation expanded to Nixon's other finances, including publicly funded renovations to his private homes in California and Florida. On November 17, addressing Associated Press editors at Walt Disney World's Contemporary Resort, Nixon denied wrongdoing and, in a defense considered the most iconic line from Watergate, declared, "I am not a crook."
+
+The eighteen-minute gap
+Main article: 18½ minute gap
+Nixon's secretary Rose Mary Woods demonstrating the implausible "Rose Mary Stretch" that the White House said erased the 18½ minute gap
+
+On November 21, Buzhardt told Jaworski that an 18-minute, 15-second segment was missing from a June 20, 1972 tape: a Nixon-Haldeman conversation thought to be Nixon's first on Watergate after the break-in. Buzhardt believed the erasure was intentional and blamed Nixon's secretary, Rose Mary Woods, who could not explain the gap; Sirica ordered all tapes be surrendered within five days. Nixon complied, and they were placed in a National Security Agency-installed safe—guarded by U.S. Marshals—in Sirica's chambers; the seven extant tapes were given to the Force on December 12.
+
+In December hearings, Force lawyer Jill Volner interrogated Woods, who now claimed that, while transcribing the tape on October 1, she accidentally hit "record" instead of "off" while reaching for the telephone and also kept her foot on the "forward" pedal throughout the call. In a reenactment, Woods could not keep her foot on the pedal. Photos of the recreation generated the mocking label of the "Rose Mary Stretch".
+
+Woods' five-minute call also did not match the erasure's 18-minute duration. Questioned on the discrepancy, Haig suggested the "devil theory", that "some sinister force had come in and applied the other energy source and taken care of the information." Volner theorized that Woods and Nixon had listened to the tape (the first subpoenaed) and that Nixon had panicked and made Woods erase it before realizing that the other subpoenaed tapes were equally incriminating. Sirica deemed the erasure "more symbolic than substantive", and Jaworski and the FBI declined to prosecute. In January 1974, an expert panel appointed by Sirica concluded that the tape had been erased in five to nine separate segments using the hand keys—not the pedal. Other tapes had apparent seconds-long deletions—obscuring key words—but Sirica decided that further analysis was tangential.
+
+Investigations advance
+
+Pushed by Speaker Tip O'Neill to accelerate the impeachment inquiry, Rodino's Judiciary Committee selected John Doar as special counsel. In December, Nixon withdrew from engagements—sometimes for days—amid drinking bouts. On New Year's Eve, he resolved to "fight it all out", selecting trial lawyer James St. Clair to resist and delay all investigations.
+
+In January, Sirica's scientific panel began deciphering the muffled and compressed tapes, which were recorded at a fast 15/16th inch per second speed to save tape. Transcription was arduous, 100 hours of labor needed for just one hour of tape. The contents were damning, and Sirica finally concluded that the White House had obstructed justice. Concurrently, the Judiciary Committee debated charging Nixon with specific offenses or more ambiguous Constitutional crimes.
+
+Prosecutors focused on the cover-up—an explicit White House conspiracy—rather than the break-in, a more nebulous campaign conspiracy. Although Jaworski identified at least 15 instances where Nixon acknowledged or advanced the hush money scheme, he hesitated to indict the president due to lack of precedent. The Force instead designated Nixon an unindicted co-conspirator, allowing jurors to hear him on the tape and empowering Jaworksi to send incriminating evidence to the impeachment inquiry. On March 1, the Force indicted the "Watergate Seven": Mitchell, Haldeman, Ehrlichman, Colson, Gordon Strachan, Robert Mardian, and Kenneth Parkinson on 24 counts of conspiracy, lying, and obstructing justice. On March 26, Sirica transferred a 55-page report on presidential criminality, compiled by Jaworski and the grand jury, to the Judiciary Committee.
+
+Nixon releases tape transcripts
+President Nixon announcing the release of edited transcripts, April 29, 1974
+
+In mid-April, Jaworski subpoenaed another 64 taped conversations, with a May 2 deadline. Nixon then spent his days listening to the tapes, taking notes, and brooding in what Graff calls "one of the oddest weeks in all of modern presidential history". Instead of releasing the tapes, Nixon's staff produced edited transcripts; Nixon himself excised "unpresidential" language, namely replacing profanity and vulgarity with hundreds of "expletive deleted". On April 29, Nixon released 1,300 pages of transcripts spanning 46 tapes.
+
+House investigators discovered that only 20 of the 64 subpoenaed conversations had been transcribed. Comparison with tapes already acquired by investigators showed pervasive misrepresentations and intelligible dialogue marked "unintelligible". The edited transcripts still showed Nixon's apparent acceptance of the cover-up.
+
+The House Judiciary Committee informed Nixon that the transcripts did not fulfill the subpoena. St. Clair moved to block Jaworski's subpoena, calling the tapes "inadmissible hearsay" as Nixon was not a conspirator. Jaworski revealed that Nixon was an unindicted co-conspirator and offered, as a compromise, to keep this secret and drop the subpoena if the White House released just 38 of the 64 tapes. St. Clair rejected this as blackmail.
+
+On May 9, the pro-Nixon Chicago Tribune abandoned the president in an editorial: "He is humorless to the point of being inhumane. He is devious. He is vacillating. He is profane." Senate Republican leader Hugh Scott called the transcripts "deplorable, disgusting, shabby, and immoral". Nixon's miscalculation yielded the first poll showing that a majority of Americans supported impeachment.
+
+Impeachment hearings and United States v. Nixon
+Main articles: Impeachment process against Richard Nixon and United States v. Nixon
+First day of impeachment proceedings, May 9, 1974
+
+On May 9, impeachment hearings began. Over ten weeks, Doar and colleagues presented representatives with a complete account of Watergate from the break-in through to the cover-up, highlighting likely constitutional crimes. On May 10, Jaworski released a 39-page brief naming Nixon an unindicted co-conspirator; Sirica concluded that "the president was doomed". To avoid protracted appeals, Jaworski requested the Supreme Court directly review the subpoena's legality, to which it agreed on May 31.
+
+On June 15, Woodward and Bernstein published All the President's Men, which became a bestseller. Later that month, the Ervin Committee released its 1,094-page final report, outlining White House misconduct without explicitly accusing Nixon. After the Fourth of July recess, the inquiry presented "seminars" synthesizing the information to the House and began releasing evidential "Statements of Information", beginning with a 4,133-page installment. Aiming to remain neutral, Rodino presented no analysis of the evidence, frustrating readers.
+
+Conservative Southern Democrats began abandoning Nixon, and on July 23 Lawrence Hogan became the first Republican representative to support impeachment. The following day, the Supreme Court ruled unanimously (8–0) that the subpoenaed tapes were admissible while also affirming executive privilege. Nixon complied and released the first 20 subpoenaed tapes on July 30.
+
+'Smoking gun' tape released
+
+On July 27, 1974, the House Judiciary Committee voted 27-to-11 to recommend the first article of impeachment: obstruction of justice. On July 29, the committee recommended a second article, abuse of power, and, on the following day, approved a third—obstruction of Congress—and rejected two related to the Cambodian bombings and tax fraud. Ninety percent of Americans listened to the proceedings on radio or television. As Congressional support for Nixon collapsed and the release of the June 23 "smoking gun" tape loomed, Nixon weighed resigning to preserve his federal benefits and those of his staff and limit liability. If impeached by the House, Nixon needed the support of 34 Senators for acquittal.
+
+On August 5, the White House released the "smoking gun" tape. The Haldeman-Nixon conversation showed that the president had lied and had been involved in the cover-up from its inception. Its release extinguished most Congressional support for Nixon, particularly among Republicans who felt betrayed. Republican House minority leader John Rhodes and ten Republican House Judiciary Committee members who had opposed the articles now backed impeachment. The following day, California governor Ronald Reagan and RNC chairman George H. W. Bush both urged Nixon to resign. Senator Barry Goldwater told Haig that Nixon only had 12 votes in the Senate and said "He has lied to me for the last time". Fearing a "berserk" Nixon might unilaterally trigger nuclear armageddon, Defense Secretary James R. Schlesinger, according to Graff, alerted military leaders to confirm any presidential launch orders with himself or Kissinger.
+
+Resignation
+Further information: Richard Nixon's resignation speech and Inauguration of Gerald Ford
+Following an August 7 meeting with Senate minority leader Hugh Scott, Senator Barry Goldwater, and House minority leader John Rhodes (pictured left), Nixon decided to resign. He left the White House on August 9 (right).
+
+On August 7, House minority leader Rhodes, Senate minority leader Hugh Scott, and Senator Goldwater—a respected Republican statesman—visited Nixon in the Oval Office and, although not explicitly urging his resignation, informed him that he did not have enough support to be acquitted. Faced with the inevitability of his impeachment and removal, Nixon resolved to resign.
+
+In an August 8 Oval Office address, Nixon announced his resignation—the first of any U.S. president—effective at noon the following day, and his succession by then-Vice President Ford. Although he declared that he was not a "quitter", Nixon explained that he lacked support in Congress and had to "put the interest of America first". Jaworski noted that the farewell speech expressed no remorse.
+
+In the morning, Nixon and his family bid farewell to the White House staff in the East Room. They left on the presidential helicopter, Army One, for Maryland's Andrews Air Force Base, where they boarded Air Force One for California. Ford delivered an 8-minute inauguration speech, also in the East Room, declaring that "our long national nightmare is over". Time's resignation special sold 527,000 copies—the most of any newsweekly ever.
+
+Cite error: There are <ref group=lower-alpha> tags or {{efn}} templates on this page, but the references will not show without a {{reflist|group=lower-alpha}} template or {{notelist}} template (see the help page).
+
+Aftermath
+
+Ford's pardon of Nixon
+Further information: Pardon of Richard Nixon
+President Ford announcing his pardon of Nixon on September 8, 1974
+
+With Nixon's resignation, Congress dropped its impeachment proceedings, though federal prosecution remained a possibility. In its final report, the House Judiciary identified 36 instances of obstruction of justice by Nixon, and Jaworski and the Watergate Special Prosecution Force weighed indicting Nixon. On September 8, President Ford issued Nixon a full pardon for all acts committed as president. Ford may have feared the damage of a long, divisive trial, or a technical acquittal that might delegitimize his own presidency.
+
+Ford was criticized for the unilateral pardon's suddenness, granted without consultation with Congressional leaders. Senator Ervin called it "incompatible with good government", and Ford's press secretary Jerald terHorst resigned in protest. The president's approval rating fell by 22 percentage points. Although some argued that the Force could still prosecute Nixon, Jaworski resigned in October. According to Hersh, Jaworski was in financial distress at the time and could no longer be absent from his Texan law practice.
+
+Many, including O'Neill, suspected a secret pardon deal between Ford and Nixon. No tapes or documentation suggest an explicit agreement, but biographer Jay Farrell concluded that implicit suggestions may have "greased his departure". When Haig approached him about Nixon's possible choices, then-Vice President Ford reportedly refused to offer advice as he was an "interested party." Starting September 4, Ford—through aides—sought a formal apology from Nixon in exchange for a pardon. The former president refused to make any admission of guilt, and Ford abandoned the effort. According to Kutler, Nixon correctly assumed that Ford would pardon him regardless. Hersh argues that a recorded September 7 call shows Nixon threatening to expose Ford's prior promises of a pardon if he was not pardoned.
+
+Final legal actions
+
+In total, 69 people were charged with crimes in conjunction with Watergate, including two of Nixon's Cabinet secretaries. Most were convicted or pleaded guilty. A Watergate-related probe on the ITT corporation resulted in the conviction of Ed Reinecke, Lieutenant Governor of California under Ronald Reagan. Of the Watergate Seven, Mitchell, Haldeman, Ehrlichman were convicted. Parkinson was acquitted, and Mardian's conviction was overturned. Mitchell remains the highest-ranking US government official to be imprisoned. Upon his sentencing, he quipped: "It could have been worse. They could have sentenced me to spend the rest of my life with Martha Mitchell."
+
+In June 1975, Nixon gave secret testimony to a grand jury. He evaded questions on the 18-minute gap and tax fraud and praised "hardball" tactics used by Kennedy in contrast to the Watergate "bunglers". In 1978, FBI directors Gray and Felt and FBI Domestic Intelligence head Edward Miller were indicted for their approval of "surreptitious entries". Nixon voluntarily testified in their defense in 1980, his only appearance in any Watergate-related trial. Felt and Miller were found guilty.
+
+Legacy
+The Watergate Complex in September, 2025
+
+Watergate is regarded as the greatest scandal in presidential history and a successful demonstration of the separation of powers. It is frequently invoked during presidential scandals and impeachments, particularly those of President Trump. Haig and Kissinger respectively blamed Watergate for the Yom Kippur War (1973) and the Fall of Saigon (1975).
+
+In 1977, Nixon—financially distressed and also hoping to improve his legacy—accepted $600,000 for a series of interviews with British journalist David Frost. Nixon expected Frost to be amenable and was surprised by his combative questions, leading Nixon to declare "When the President does it, that means that it is not illegal." Although Nixon formally apologized for Watergate after the interview, his legacy remained tarnished. The Watergate Hotel has conversely embraced the scandal, incorporating it into its theming and converting Hunt and Liddy's room into the "scandal suite".
+
+Political and professional
+An anti-Ford button referencing Watergate from the 1976 presidential election
+
+Watergate led to legislation limiting the powers of the "imperial presidency", including the designation of all presidential records as publicly owned (the Presidential Records Act) and a mechanism for counsel investigations of executive scandals (the Ethics in Government Act). These reforms were partly achieved by "Watergate Babies", new Democratic legislators who swept the post-Watergate November 1974 Senate and House elections. Ford's pardon of Nixon effectively caused his loss to Jimmy Carter in the 1976 election; seven percent of voters decided against Ford explicitly due to the pardon.
+
+Seeking to restore public trust after Watergate and the release of the CIA's "Family Jewels", Congress organized the Church Committee to investigate illegal activities by the CIA and other agencies, as did President Ford with the Rockefeller Commission. Concerns emerging from the burglaries and wiretappings resulted in the Privacy Act of 1974 and the Foreign Intelligence Surveillance Act, which limited the ability of federal agencies to collect, maintain, and share information on Americans. Congress also strengthened the Freedom of Information Act, and created intelligence oversight committees with access to classified material.
+
+As nearly all involved in Watergate crimes were lawyers, the American Bar Association mandated ethics courses at law schools. Watergate also revived investigative reporting, popularizing the use of anonymous sources and displacing "New Journalism" approaches.
+
+Cultural impact and depictions
+
+Watergate is often regarded as the climactic moment in the loss of American trust in government following the Vietnam War. Journalist Bill Schneider writes that although American political cynicism did not "start with Watergate... Watergate turned an erosion of public confidence into a collapse". It left such an impression that post-Watergate scandals are often named with the suffix "-gate". These range from genuine political scandals like Koreagate to the sports scandal Deflategate and the discredited Pizzagate conspiracy theory. The paranoia of the "Watergate era" is often associated with a subgenre of 1970s conspiracy thrillers, such as cinematic releases such as Francis Ford Coppola's The Conversation (1974) or Three Days of the Condor (1975), and Washington: Behind Closed Doors (1977), which depicts the lead up to Watergate, on television. In some cases, production had begun before the scandal's zenith and are partly a reflection of the period's zeitgeist.
+
+Over thirty Watergate participants have written memoirs. Woodward and Bernstein's 1974 book All the President's Men was adapted into a 1976 film of the same name by Alan J. Pakula—in which Watergate guard Frank Wills played himself. Although not used in the book, the phrase "follow the money" became part of the American lexicon after its use in the movie: Graff calls it the second most famous Watergate quote after "I am not a crook". The book also popularized the term "ratfucking" to describe covert political espionage. Other depictions include Oliver Stone's Nixon (1996) and Frost/Nixon (2008), adapted from a Tony-winning play of the same name.
+
+Notes and references
+
+Notes
+
+Citations
+
+Works cited
+
+Books
+
+Journal articles
+
+News articles
+
+Web sources
+
+Wikimedia Commons has media related to Watergate scandal.
+
+Wikiquote has quotations related to Watergate scandal.
+
+List of years
+
+Historiography
+
+ Category
+
+ Portal

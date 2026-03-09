@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
   <title>Doubletake</title>
@@ -58,13 +59,13 @@
 <body>
   <div class="container">
     <h1 class="page-title"><span class="title-box">double</span> <span class="title-doublebox">take</span></h1>
-    <p class="subtitle" id="subtitle">Guess the country by expanding the summary below.</p>
-
     <select class="mode-select" id="modeSelect">
       <option value="countries">Countries</option>
       <option value="cities">Cities</option>
       <option value="hist_figures">Historical Figures</option>
       <option value="disney">Disney Movies</option>
+      <option value="us_states">US States</option>
+      <option value="us_periods">US Periods</option>
     </select>
 
     <div class="guess-container">
@@ -103,7 +104,8 @@
       <div class="tutorial-modal">
         <button class="close-btn" onclick="closeTutorial()">&times;</button>
         <h2>Welcome to doubletake!</h2>
-        <p class="tutorial-text">In this game, you can click cards to split them:</p>
+        <p class="tutorial-text"> Your goal is to guess what is being described by the cards.</p>
+        <p class="tutorial-text tutorial-text-bottom">You can click cards to split them:</p>
         <div class="tutorial-demo" id="tutorialDemo"></div>
         <button class="guess-btn" style="width:50%;margin-top:18px;display:block;margin-left:auto;margin-right:auto;" onclick="closeTutorial()">OK</button>
       </div>
@@ -133,6 +135,8 @@
     let citiesCache = null;
     let histFiguresCache = null;
     let disneyCache = null;
+    let usStatesCache = null;
+    let usPeriodsCache = null;
     let disneyPhotoMap = null;
 
     // Valid Disney indices (movies with level_summaries)
@@ -151,6 +155,8 @@
       if (currentMode === "disney") return "movie";
       if (currentMode === "cities") return "city";
       if (currentMode === "hist_figures") return "historical figure";
+      if (currentMode === "us_states") return "US state";
+      if (currentMode === "us_periods") return "US period";
       return "country";
     }
 
@@ -159,6 +165,8 @@
       if (mode === "cities") return citiesCache;
       if (mode === "hist_figures") return histFiguresCache;
       if (mode === "disney") return disneyCache;
+      if (mode === "us_states") return usStatesCache;
+      if (mode === "us_periods") return usPeriodsCache;
       return null;
     }
 
@@ -167,14 +175,19 @@
       else if (mode === "cities") citiesCache = data;
       else if (mode === "hist_figures") histFiguresCache = data;
       else if (mode === "disney") disneyCache = data;
+      else if (mode === "us_states") usStatesCache = data;
+      else if (mode === "us_periods") usPeriodsCache = data;
     }
 
     const MODE_CSV = {
       countries: '../data/countries/countries_titles.csv',
       cities: '../data/cities/city_titles.csv',
       hist_figures: '../data/hist_figures/hist_figures_titles.csv',
+      us_states: '../data/us_states/us_states.csv',
+      us_periods: '../data/us_periods/us_periods.csv',
     };
 
+    //will fetch the data from the corresponding folder.
     async function loadModeData(mode) {
       try {
         const cached = getCacheForMode(mode);
@@ -218,7 +231,7 @@
             const [nameRaw, , wikiNameRaw] = lines[i].split(',');
             const name = (nameRaw || "").replace(/^"|"$/g, '').trim();
             const wikiName = (wikiNameRaw || "").replace(/^"|"$/g, '').trim();
-            const title = wikiName || name;
+            const title = (mode === "us_states" || mode === "us_periods" ? name : wikiName) || name;
             const filename = toFilename(wikiName || name);
             if (!title || !filename) continue;
             items.push({ title, filename });
@@ -253,10 +266,20 @@
     }
 
     function getPhotoHtml() {
-      if (currentMode !== "disney" || !disneyPhotoMap || !currentItemFile) return "";
-      const photoFile = disneyPhotoMap[currentItemFile];
-      if (!photoFile) return "";
-      return `<img class="movie-photo" src="../data/disney/photos/${photoFile}" alt="Movie poster">`;
+      if (!currentItemFile) return "";
+      if (currentMode === "disney") {
+        if (!disneyPhotoMap) return "";
+        const photoFile = disneyPhotoMap[currentItemFile];
+        if (!photoFile) return "";
+        return `<img class="movie-photo" src="../data/disney/photos/${photoFile}" alt="Movie poster">`;
+      }
+      if (currentMode === "countries") {
+        return `<img class="movie-photo" src="../data/countries/photos/${currentItemFile}.svg" alt="Country photo">`;
+      }
+      if (currentMode === "us_states") {
+        return `<img class="movie-photo" src="../data/us_states/photos/${currentItemFile}.svg" alt="State flag">`;
+      }
+      return "";
     }
 
     function selectRandomItem() {
@@ -282,6 +305,7 @@
       clickCount = 0;
       hasWon = false;
       document.getElementById("feedback").innerHTML = "";
+      document.getElementById("treeContainer").style.display = "";
       document.getElementById("guessInput").value = "";
       document.getElementById("guessInput").disabled = false;
       document.getElementById("guessBtn").disabled = false;
@@ -296,7 +320,7 @@
         .replace(/[\(\)]/g, "")
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
-        .replace(/\s*(film|movie|country)\s*/g, "")
+        .replace(/\s*(film|movie|country|state)\s*/g, "")
         .replace(/\d{4}/g, "")
         .replace(/[^a-z0-9\s]/g, "")
         .replace(/\s+/g, " ")
@@ -317,16 +341,13 @@
         document.getElementById("guessInput").disabled = true;
         document.getElementById("guessBtn").disabled = true;
         document.getElementById("giveUpBtn").disabled = true;
+        document.getElementById("treeContainer").style.display = "none";
         feedbackEl.innerHTML = `
           <div class="win-message">
-            <h2>🎉 Correct!</h2>
-        <p>The ${label} was <strong>${escapeHtml(currentItemTitle)}</strong></p>
+            <h2>Correct</h2>
             ${getPhotoHtml()}
             <p>You got it in ${guessCount} guess${guessCount !== 1 ? "es" : ""} using ${clickCount} split${clickCount !== 1 ? "s" : ""}!</p>
         <button class="play-again-btn" onclick="selectRandomItem()">Play Again</button>
-            <button class="play-again-btn" onclick="openEmailModal(event)">Play More</button>
-            <a class="play-again-btn" style="background: none" href="mailto:eric_xia@brown.edu">
-      <p>Feedback: eric_xia@brown.edu</p></a>
           </div>
         `;
       } else {
@@ -353,9 +374,7 @@
           <p>The ${label} was <strong>${escapeHtml(currentItemTitle)}</strong></p>
           ${getPhotoHtml()}
           <p>Splits used: ${clickCount}. Guesses made: ${guessCount}.</p>
-          <button class="play-again-btn" onclick="selectRandomItem()">Try another</button>
-          <button class="play-again-btn" onclick="openEmailModal(event)">Play More</button>
-          <a class="play-again-btn" href="mailto:eric_xia@brown.edu">Feedback</a>
+          <button class="play-again-btn" onclick="selectRandomItem()">Play Again</button>
         </div>
       `;
     }
@@ -463,6 +482,7 @@
       clickCount = 0;
       hasWon = false;
       document.getElementById("feedback").innerHTML = "";
+      document.getElementById("treeContainer").style.display = "";
       document.getElementById("guessInput").value = "";
       document.getElementById("guessInput").disabled = false;
       document.getElementById("guessBtn").disabled = false;
@@ -474,7 +494,7 @@
     // Mode switch handler
     modeSelect.addEventListener("change", async (e) => {
       currentMode = e.target.value;
-      subtitle.textContent = `Use the clues below to guess the ${modeLabel()}. Click any card to get more details.`;
+      // subtitle.textContent = `Use the clues below to guess the ${modeLabel()}. Click any card to get more details.`;
       await loadModeData(currentMode);
       selectRandomItem();
     });
@@ -484,6 +504,8 @@
       cities: '../data/cities/level_summaries/',
       hist_figures: '../data/hist_figures/level_summaries/',
       disney: '../data/disney/level_summaries/',
+      us_states: '../data/us_states/level_summaries/',
+      us_periods: '../data/us_periods/level_summaries/',
     };
 
     async function loadItem(filename) {
