@@ -57,24 +57,52 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="page-title"><span class="title-box">double</span> <span class="title-doublebox">take</span></h1>
-    <select class="mode-select" id="modeSelect">
-      <option value="countries">Countries</option>
-      <option value="cities">Cities</option>
-      <option value="hist_figures">Historical Figures</option>
-      <option value="disney">Disney Movies</option>
-      <option value="us_states">US States</option>
-      <option value="us_periods">US Periods</option>
-    </select>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <h1 class="page-title"><span class="title-box">double</span> <span class="title-doublebox">take</span></h1>
+      <button class="mode-current" id="modeCurrent">
+        <img src="images/countries.png" alt="Countries" id="modeCurrentImg">
+        <span class="mode-current-label" id="modeCurrentLabel">Countries</span>
+      </button>
+    </div>
+  </nav>
 
+  <div class="mode-modal-overlay" id="modeModalOverlay">
+    <div class="mode-modal">
+      <button class="mode-modal-close" id="modeModalClose">&times;</button>
+      <div class="mode-modal-grid" id="modeModalGrid">
+        <button class="mode-option active" data-mode="countries">
+          <img src="images/countries.png" alt="Countries">
+          <span>Countries</span>
+        </button>
+        <button class="mode-option" data-mode="cities">
+          <img src="images/cities.png" alt="Cities">
+          <span>Cities</span>
+        </button>
+        <button class="mode-option" data-mode="hist_figures">
+          <img src="images/hist_figures.png" alt="Historical Figures">
+          <span>Figures</span>
+        </button>
+        <button class="mode-option" data-mode="disney">
+          <img src="images/movie.png" alt="Disney Movies">
+          <span>Disney</span>
+        </button>
+        <button class="mode-option" data-mode="us_states">
+          <img src="images/us_states.png" alt="US States">
+          <span>States</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <div class="guess-container">
       <div class="autocomplete-container">
-        <input type="text" class="guess-input" id="guessInput" placeholder="Enter your guess..." autocomplete="off">
+        <input type="text" class="guess-input" id="guessInput" placeholder="it's on the tip of my tongue... " autocomplete="off">
         <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
       </div>
-      <button class="guess-btn" id="guessBtn">Guess</button>
-      <button class="guess-btn giveup-btn" id="giveUpBtn">Give up</button>
+      <button class="guess-btn" id="guessBtn">guess</button>
+      <button class="guess-btn giveup-btn" id="giveUpBtn">give up</button>
     </div>
 
     <div id="feedback"></div>
@@ -104,7 +132,7 @@
       <div class="tutorial-modal">
         <button class="close-btn" onclick="closeTutorial()">&times;</button>
         <h2>Welcome to doubletake!</h2>
-        <p class="tutorial-text"> Your goal is to guess what is being described by the cards.</p>
+        <p class="tutorial-text"> Your goal is to guess what is being described from the chosen category.</p>
         <p class="tutorial-text tutorial-text-bottom">You can click cards to split them:</p>
         <div class="tutorial-demo" id="tutorialDemo"></div>
         <button class="guess-btn" style="width:50%;margin-top:18px;display:block;margin-left:auto;margin-right:auto;" onclick="closeTutorial()">OK</button>
@@ -142,7 +170,12 @@
     // Valid Disney indices (movies with level_summaries)
     const VALID_DISNEY_INDICES = [1,2,3,4,5,6,7,8,9,10,11,12,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46,47,48,49];
     const subtitle = document.getElementById("subtitle");
-    const modeSelect = document.getElementById("modeSelect");
+    const modeCurrent = document.getElementById("modeCurrent");
+    const modeCurrentImg = document.getElementById("modeCurrentImg");
+    const modeModalOverlay = document.getElementById("modeModalOverlay");
+    const modeModalGrid = document.getElementById("modeModalGrid");
+    const modeCurrentLabel = document.getElementById("modeCurrentLabel");
+    const modeModalClose = document.getElementById("modeModalClose");
 
     function toFilename(value) {
       return (value || "")
@@ -491,10 +524,43 @@
       loadItem(currentItemFile);
     });
 
-    // Mode switch handler
-    modeSelect.addEventListener("change", async (e) => {
-      currentMode = e.target.value;
-      // subtitle.textContent = `Use the clues below to guess the ${modeLabel()}. Click any card to get more details.`;
+    // Mode modal handlers
+    const MODE_IMAGES = {
+      countries: "images/countries.png",
+      cities: "images/cities.png",
+      hist_figures: "images/hist_figures.png",
+      disney: "images/movie.png",
+      us_states: "images/us_states.png",
+    };
+
+    modeCurrent.addEventListener("click", () => {
+      modeModalOverlay.classList.add("show");
+    });
+
+    modeModalClose.addEventListener("click", () => {
+      modeModalOverlay.classList.remove("show");
+    });
+
+    modeModalOverlay.addEventListener("click", (e) => {
+      if (e.target === modeModalOverlay) modeModalOverlay.classList.remove("show");
+    });
+
+    modeModalGrid.addEventListener("click", async (e) => {
+      const btn = e.target.closest(".mode-option");
+      if (!btn) return;
+      const mode = btn.dataset.mode;
+      if (mode === currentMode) {
+        modeModalOverlay.classList.remove("show");
+        return;
+      }
+      modeModalGrid.querySelector(".mode-option.active").classList.remove("active");
+      btn.classList.add("active");
+      currentMode = mode;
+      const label = btn.querySelector("span").textContent;
+      modeCurrentImg.src = MODE_IMAGES[mode];
+      modeCurrentImg.alt = label;
+      modeCurrentLabel.textContent = label;
+      modeModalOverlay.classList.remove("show");
       await loadModeData(currentMode);
       selectRandomItem();
     });

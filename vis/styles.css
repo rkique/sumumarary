@@ -18,11 +18,12 @@
     }
 
     :root {
-      --bg: #b762ff;
+      --bg: #c359f3;
       --card-bg: #0042ff;
       --border: #000000;
-      --accent: #FFD644;
-      --accent-bg: #0042ff;
+      --accent: #ff0;
+      --accent-bg: #8b00ae;
+      --light-bg: #ebc0ff;
       --accent-border: #000000;
       --button-color: #e3ee46;
       --text: #FFFFFF;
@@ -58,15 +59,16 @@
       margin: 0;
       min-height: 100vh;
       font-family: var(--font);
-      
+
       background: var(--bg);
       color: var(--text);
-      padding: 32px 16px;
+      padding: 0;
     }
 
     .container {
       max-width: 960px;
       margin: 0 auto;
+      padding: 0 16px 32px;
     }
 
     h1 {
@@ -96,7 +98,7 @@
     .tree-container {
       background: var(--card-bg);
       border: 3px solid var(--border);
-      padding: 24px;
+      padding: 32px 18px 12px 18px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
 
@@ -226,7 +228,9 @@
       box-shadow: none;
     }
 
-
+    .giveup-btn {
+      background: var(--light-bg)
+    }
     .giveup-btn:hover {
       /* background: var(--bg);
       color: var(--text);
@@ -384,42 +388,153 @@
       color: var(--accent);
       font-size: inherit;
       font-weight: inherit;
+      background: var(--accent-bg);
     }
 
     .title-doublebox {
       display: inline-block;
       position: relative;
-      padding: 8px 18px 6px;
-      margin: 0 10px 10px 4px;
+      padding: 0px 0px 10px;
+      margin: 0 0 0 0;
       border: 4px solid rgb(237, 237, 0);
-      background: transparent;
+      /* background: var(--light-bg); */
+      /* background: var(--bg); */
       color: var(--accent);
       font-size: inherit;
       font-weight: 900;
       line-height: 1.2;
       letter-spacing: 0.03em;
-      box-shadow: 14px 14px 0 0 var(--accent-bg);
+      /* box-shadow: 14px 14px 0 0 var(--accent-bg); */
     }
 
-    .mode-select {
-      width: 100%;
-      padding: 12px 16px;
-      font-size: 16px;
-      /* border: 1px solid white; */
-      background: var(--card-bg);
-      color: rgb(136, 187, 255);
-      margin-bottom: 16px;
+    .navbar {
+      background: var(--accent-bg);
+      border-bottom: 3px solid #000000;
+      padding: 8px 24px;
+      margin-bottom: 24px;
+    }
+
+    .navbar-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .page-title {
+      margin: 0;
+    }
+
+    .mode-current {
+      background: var(--bg);
+      border: none;
+      padding: 8px;
       cursor: pointer;
+      flex-shrink: 0;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
     }
-/* 
-    .mode-select:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: none;
-    } */
 
-    .mode-select:focus-visible {
-      outline: none;
+    .mode-current img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+
+    .mode-current-label {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: var(--font);
+    }
+
+    /* Mode selection modal */
+    .mode-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(3px);
+      align-items: center;
+      justify-content: center;
+      z-index: 1001;
+    }
+
+    .mode-modal-overlay.show {
+      display: flex;
+    }
+
+    .mode-modal {
+      background: var(--card-bg);
+      border: 3px solid #000;
+      padding: 28px 24px 24px;
+      max-width: 420px;
+      width: 90%;
+      position: relative;
+      box-shadow: 8px 8px 0 #000;
+    }
+
+    .mode-modal-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      color: var(--accent);
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+
+    .mode-modal-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      padding-top: 8px;
+    }
+
+    .mode-option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 3px solid transparent;
+      padding: 12px 16px;
+      cursor: pointer;
+      border-radius: 0;
+      opacity: 0.5;
+      transition: opacity 150ms ease;
+    }
+
+    .mode-option img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .mode-option span {
+      color: var(--text);
+      font-size: 26px;
+      font-weight: 600;
+      font-family: var(--font);
+    }
+
+    .mode-option:hover {
+      opacity: 0.8;
+    }
+
+    .mode-option.active {
+      opacity: 1;
+      border-color: var(--accent);
     }
 
     /* Tutorial button */
@@ -537,6 +652,6 @@
         padding: 5px 12px 4px;
         margin: 0 6px 6px 2px;
         border-width: 3px;
-        box-shadow: 8px 8px 0 0 var(--accent-bg);
+        /* box-shadow: 8px 8px 0 0 var(--accent-bg); */
       }
     }
